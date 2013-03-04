@@ -1,0 +1,101 @@
+$blueprint-grid-columns : 24;
+$blueprint-grid-width   : 30px;
+$blueprint-grid-margin  : 10px;
+$font-color             : #333;
+
+@import 'compass/reset';
+@import 'compass/layout';
+@import 'compass/css3';
+@import 'compass/typography';
+@import "blueprint";
+
+$logo_image: "logo.jpg";
+$bg-color:#ccc;
+$bg-image:"http://s.libdd.com/img/bg/htmlbg.$5752.png";
+$fg-color:black;
+$header-height: 40px;
+$border-color: #e5e5e5;
+
+//布局:body 24c sidebar
+
+
+@function image-url($image){
+    @return "url(/images/#{$image})";
+}
+html{
+   // background:url($bg-image) repeat;
+}
+
+body{
+    //background-color:$bg-color;
+    color:$fg-color;
+    a:link, a:visited {text-decoration:none;}
+}
+
+#header {
+    margin-bottom:10px;
+    height:$header-height;
+    @include background-image(linear-gradient(top, #222, #111)); 
+    @include clearfix;
+    .wrapper {
+        @include container;
+        margin-top:5px;
+    }
+
+    .logo {
+        width:image-width($logo_image);
+        height:image-height($logo_image);
+        background-image: #{image-url($logo_image)};
+        float:left;
+        margin-right:20px;
+        margin-left:20px;
+        @include float-left;
+    }
+    .userinfo {
+        @incldue float-right;
+    }
+}
+
+#nav{
+    @include horizontal-list;
+    a{
+        @include link-colors(#555,red,red,#555);
+        font-weight:bold;
+        font-size:1.5em;
+        &.current:link{
+            color: white;
+        }
+    }
+    margin-top:5px;
+}
+
+#main{
+    @include clearfix;
+    @include container;
+    padding:5px 20px 20px;
+}
+#sidebar{
+    @include column(4);
+    background-color:#aaa;
+    @include float-left;
+}
+#content {
+    @include column(20);
+    @include float-left;    
+    h1 {
+        font-size:2em;
+        border-bottom:1px solid #{$border-color};
+        line-height:150%;
+    }
+    .content {
+        margin-top:10px;
+    }
+    ul {
+        li {
+            line-height:2em;
+            a{
+                @include link-colors(black, red, red, gray);
+            }
+        }
+    }
+}
