@@ -1,0 +1,905 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Add	include/Config.h	/^void Config::Add( const std::string& in_key, const T& value )  $/;"	f	class:Config
+AddOneItem	src/CatIdMap.cpp	/^int CatIdMap::AddOneItem(string & rootCatName,string & leafCatName)$/;"	f	class:CatIdMap
+Args	include/json/value.h	/^      typedef std::vector<PathArgument> Args;$/;"	t	class:Json::Path
+ArrayIndex	include/json/value.h	/^      typedef UInt ArrayIndex;$/;"	t	class:Json::Value
+ArrayIndex	include/json/value.h	/^      typedef Value::ArrayIndex ArrayIndex;$/;"	t	class:Json::ValueInternalArray
+Atof	src/SuperString.cpp	/^float SuperString::Atof(string & str)$/;"	f	class:SuperString
+Atoi	src/SuperString.cpp	/^int SuperString::Atoi(string & str)$/;"	f	class:SuperString
+BOOST_DIR	thrift/Makefile	/^BOOST_DIR = \/usr\/local\/boost\/include\/boost-1_44_0\/$/;"	m
+BestCatResult	include/Classfier.h	/^}BestCatResult;$/;"	t	typeref:struct:_bestCatResult
+BestCatResult	include/KNN.h	/^}BestCatResult;$/;"	t	typeref:struct:_bestCatResult
+BucketIndex	include/json/value.h	/^      typedef unsigned int BucketIndex;$/;"	t	class:Json::ValueInternalMap
+CATIDMAP_H	include/CatIdMap.h	9;"	d
+CLASSFIER_H	include/Classfier.h	19;"	d
+COMMON_HEADER_H	include/common_header.h	8;"	d
+CPPTL_AUTOLINK_DLL	include/json/autolink.h	12;"	d
+CPPTL_AUTOLINK_DLL	include/json/autolink.h	14;"	d
+CPPTL_AUTOLINK_NAME	include/json/autolink.h	11;"	d
+CPPTL_JSON_FEATURES_H_INCLUDED	include/json/features.h	2;"	d
+CPPTL_JSON_H_INCLUDED	include/json/value.h	2;"	d
+CPPTL_JSON_READER_H_INCLUDED	include/json/reader.h	2;"	d
+CZString	include/json/value.h	/^      class CZString $/;"	c	class:Json::Value
+CatConstants	thrift/gen-cpp/Cat_constants.cpp	/^CatConstants::CatConstants() {$/;"	f	class:CatConstants
+CatConstants	thrift/gen-cpp/Cat_constants.h	/^class CatConstants {$/;"	c
+CatId2Name	src/KNN.cpp	/^string KNN::CatId2Name(int catId)$/;"	f	class:KNN
+CatId2Name	src/classfier.cpp	/^string Classfier::CatId2Name(int catId)$/;"	f	class:Classfier
+CatIdMap	include/CatIdMap.h	/^class CatIdMap{$/;"	c
+CatIdMap	src/CatIdMap.cpp	/^CatIdMap::CatIdMap()$/;"	f	class:CatIdMap
+CatName	thrift/CatTextServer.cpp	/^  void CatName(std::string& _return, const std::string& doc) {$/;"	f	class:CatTextHandler
+CatName	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::CatName(std::string& _return, const std::string& doc)$/;"	f	class:CatTextClient
+CatName	thrift/gen-cpp/CatText.h	/^  void CatName(std::string& \/* _return *\/, const std::string& \/* doc *\/) {$/;"	f	class:CatTextNull
+CatName	thrift/gen-cpp/CatText.h	/^  void CatName(std::string& _return, const std::string& doc) {$/;"	f	class:CatTextMultiface
+CatName	thrift/gen-cpp/CatText_server.skeleton.cpp	/^  void CatName(std::string& _return, const std::string& doc) {$/;"	f	class:CatTextHandler
+CatName	thrift/gen-php/Cat/CatText.php	/^  public function CatName($doc)$/;"	f
+CatName	thrift/gen-php/Cat/CatText.php	/^  public function CatName($doc);$/;"	f
+CatName	thrift/gen-php/CatText.php	/^  public function CatName($doc)$/;"	f
+CatName	thrift/gen-php/CatText.php	/^  public function CatName($doc);$/;"	f
+CatNumber	thrift/CatTextServer.cpp	/^  int32_t CatNumber(const std::string& doc) {$/;"	f	class:CatTextHandler
+CatNumber	thrift/gen-cpp/CatText.cpp	/^int64_t CatTextClient::CatNumber(const std::string& doc)$/;"	f	class:CatTextClient
+CatNumber	thrift/gen-cpp/CatText.h	/^  int64_t CatNumber(const std::string& \/* doc *\/) {$/;"	f	class:CatTextNull
+CatNumber	thrift/gen-cpp/CatText.h	/^  int64_t CatNumber(const std::string& doc) {$/;"	f	class:CatTextMultiface
+CatNumber	thrift/gen-cpp/CatText_server.skeleton.cpp	/^  int64_t CatNumber(const std::string& doc) {$/;"	f	class:CatTextHandler
+CatNumber	thrift/gen-php/Cat/CatText.php	/^  public function CatNumber($doc)$/;"	f
+CatNumber	thrift/gen-php/Cat/CatText.php	/^  public function CatNumber($doc);$/;"	f
+CatNumber	thrift/gen-php/CatText.php	/^  public function CatNumber($doc)$/;"	f
+CatNumber	thrift/gen-php/CatText.php	/^  public function CatNumber($doc);$/;"	f
+CatTextClient	thrift/gen-cpp/CatText.h	/^  CatTextClient(boost::shared_ptr< ::apache::thrift::protocol::TProtocol> iprot, boost::shared_ptr< ::apache::thrift::protocol::TProtocol> oprot) :$/;"	f	class:CatTextClient
+CatTextClient	thrift/gen-cpp/CatText.h	/^  CatTextClient(boost::shared_ptr< ::apache::thrift::protocol::TProtocol> prot) :$/;"	f	class:CatTextClient
+CatTextClient	thrift/gen-cpp/CatText.h	/^class CatTextClient : virtual public CatTextIf {$/;"	c
+CatTextClient	thrift/gen-php/Cat/CatText.php	/^class CatTextClient implements CatTextIf {$/;"	c
+CatTextClient	thrift/gen-php/CatText.php	/^class CatTextClient implements \\CatTextIf {$/;"	c
+CatTextHandler	thrift/CatTextServer.cpp	/^  CatTextHandler() {$/;"	f	class:CatTextHandler
+CatTextHandler	thrift/CatTextServer.cpp	/^class CatTextHandler : virtual public CatTextIf {$/;"	c	file:
+CatTextHandler	thrift/gen-cpp/CatText_server.skeleton.cpp	/^  CatTextHandler() {$/;"	f	class:CatTextHandler
+CatTextHandler	thrift/gen-cpp/CatText_server.skeleton.cpp	/^class CatTextHandler : virtual public CatTextIf {$/;"	c	file:
+CatTextIf	thrift/gen-cpp/CatText.h	/^class CatTextIf {$/;"	c
+CatTextIf	thrift/gen-php/Cat/CatText.php	/^interface CatTextIf {$/;"	i
+CatTextIf	thrift/gen-php/CatText.php	/^interface CatTextIf {$/;"	i
+CatTextIfFactory	thrift/gen-cpp/CatText.h	/^class CatTextIfFactory {$/;"	c
+CatTextIfSingletonFactory	thrift/gen-cpp/CatText.h	/^  CatTextIfSingletonFactory(const boost::shared_ptr<CatTextIf>& iface) : iface_(iface) {}$/;"	f	class:CatTextIfSingletonFactory
+CatTextIfSingletonFactory	thrift/gen-cpp/CatText.h	/^class CatTextIfSingletonFactory : virtual public CatTextIfFactory {$/;"	c
+CatTextMultiface	thrift/gen-cpp/CatText.h	/^  CatTextMultiface() {}$/;"	f	class:CatTextMultiface
+CatTextMultiface	thrift/gen-cpp/CatText.h	/^  CatTextMultiface(std::vector<boost::shared_ptr<CatTextIf> >& ifaces) : ifaces_(ifaces) {$/;"	f	class:CatTextMultiface
+CatTextMultiface	thrift/gen-cpp/CatText.h	/^class CatTextMultiface : virtual public CatTextIf {$/;"	c
+CatTextNull	thrift/gen-cpp/CatText.h	/^class CatTextNull : virtual public CatTextIf {$/;"	c
+CatTextProcessor	thrift/gen-cpp/CatText.h	/^  CatTextProcessor(boost::shared_ptr<CatTextIf> iface) :$/;"	f	class:CatTextProcessor
+CatTextProcessor	thrift/gen-cpp/CatText.h	/^class CatTextProcessor : public ::apache::thrift::TDispatchProcessor {$/;"	c
+CatTextProcessorFactory	thrift/gen-cpp/CatText.h	/^  CatTextProcessorFactory(const ::boost::shared_ptr< CatTextIfFactory >& handlerFactory) :$/;"	f	class:CatTextProcessorFactory
+CatTextProcessorFactory	thrift/gen-cpp/CatText.h	/^class CatTextProcessorFactory : public ::apache::thrift::TProcessorFactory {$/;"	c
+CatTextServer_H	thrift/CatTextServer.h	2;"	d
+CatText_CatName_args	thrift/gen-cpp/CatText.h	/^  CatText_CatName_args() : doc() {$/;"	f	class:CatText_CatName_args
+CatText_CatName_args	thrift/gen-cpp/CatText.h	/^class CatText_CatName_args {$/;"	c
+CatText_CatName_args	thrift/gen-php/Cat/CatText.php	/^class CatText_CatName_args {$/;"	c
+CatText_CatName_args	thrift/gen-php/CatText.php	/^class CatText_CatName_args {$/;"	c
+CatText_CatName_pargs	thrift/gen-cpp/CatText.h	/^class CatText_CatName_pargs {$/;"	c
+CatText_CatName_presult	thrift/gen-cpp/CatText.h	/^class CatText_CatName_presult {$/;"	c
+CatText_CatName_result	thrift/gen-cpp/CatText.h	/^  CatText_CatName_result() : success() {$/;"	f	class:CatText_CatName_result
+CatText_CatName_result	thrift/gen-cpp/CatText.h	/^class CatText_CatName_result {$/;"	c
+CatText_CatName_result	thrift/gen-php/Cat/CatText.php	/^class CatText_CatName_result {$/;"	c
+CatText_CatName_result	thrift/gen-php/CatText.php	/^class CatText_CatName_result {$/;"	c
+CatText_CatNumber_args	thrift/gen-cpp/CatText.h	/^  CatText_CatNumber_args() : doc() {$/;"	f	class:CatText_CatNumber_args
+CatText_CatNumber_args	thrift/gen-cpp/CatText.h	/^class CatText_CatNumber_args {$/;"	c
+CatText_CatNumber_args	thrift/gen-php/Cat/CatText.php	/^class CatText_CatNumber_args {$/;"	c
+CatText_CatNumber_args	thrift/gen-php/CatText.php	/^class CatText_CatNumber_args {$/;"	c
+CatText_CatNumber_pargs	thrift/gen-cpp/CatText.h	/^class CatText_CatNumber_pargs {$/;"	c
+CatText_CatNumber_presult	thrift/gen-cpp/CatText.h	/^class CatText_CatNumber_presult {$/;"	c
+CatText_CatNumber_result	thrift/gen-cpp/CatText.h	/^  CatText_CatNumber_result() : success(0) {$/;"	f	class:CatText_CatNumber_result
+CatText_CatNumber_result	thrift/gen-cpp/CatText.h	/^class CatText_CatNumber_result {$/;"	c
+CatText_CatNumber_result	thrift/gen-php/Cat/CatText.php	/^class CatText_CatNumber_result {$/;"	c
+CatText_CatNumber_result	thrift/gen-php/CatText.php	/^class CatText_CatNumber_result {$/;"	c
+CatText_H	thrift/gen-cpp/CatText.h	8;"	d
+CatText_LoadResource_args	thrift/gen-cpp/CatText.h	/^  CatText_LoadResource_args() {$/;"	f	class:CatText_LoadResource_args
+CatText_LoadResource_args	thrift/gen-cpp/CatText.h	/^class CatText_LoadResource_args {$/;"	c
+CatText_LoadResource_args	thrift/gen-php/Cat/CatText.php	/^class CatText_LoadResource_args {$/;"	c
+CatText_LoadResource_args	thrift/gen-php/CatText.php	/^class CatText_LoadResource_args {$/;"	c
+CatText_LoadResource_pargs	thrift/gen-cpp/CatText.h	/^class CatText_LoadResource_pargs {$/;"	c
+CatText_LoadResource_presult	thrift/gen-cpp/CatText.h	/^class CatText_LoadResource_presult {$/;"	c
+CatText_LoadResource_result	thrift/gen-cpp/CatText.h	/^  CatText_LoadResource_result() {$/;"	f	class:CatText_LoadResource_result
+CatText_LoadResource_result	thrift/gen-cpp/CatText.h	/^class CatText_LoadResource_result {$/;"	c
+CatText_LoadResource_result	thrift/gen-php/Cat/CatText.php	/^class CatText_LoadResource_result {$/;"	c
+CatText_LoadResource_result	thrift/gen-php/CatText.php	/^class CatText_LoadResource_result {$/;"	c
+CatText_TextFeature_args	thrift/gen-cpp/CatText.h	/^  CatText_TextFeature_args() : doc() {$/;"	f	class:CatText_TextFeature_args
+CatText_TextFeature_args	thrift/gen-cpp/CatText.h	/^class CatText_TextFeature_args {$/;"	c
+CatText_TextFeature_args	thrift/gen-php/Cat/CatText.php	/^class CatText_TextFeature_args {$/;"	c
+CatText_TextFeature_args	thrift/gen-php/CatText.php	/^class CatText_TextFeature_args {$/;"	c
+CatText_TextFeature_pargs	thrift/gen-cpp/CatText.h	/^class CatText_TextFeature_pargs {$/;"	c
+CatText_TextFeature_presult	thrift/gen-cpp/CatText.h	/^class CatText_TextFeature_presult {$/;"	c
+CatText_TextFeature_result	thrift/gen-cpp/CatText.h	/^  CatText_TextFeature_result() : success() {$/;"	f	class:CatText_TextFeature_result
+CatText_TextFeature_result	thrift/gen-cpp/CatText.h	/^class CatText_TextFeature_result {$/;"	c
+CatText_TextFeature_result	thrift/gen-php/Cat/CatText.php	/^class CatText_TextFeature_result {$/;"	c
+CatText_TextFeature_result	thrift/gen-php/CatText.php	/^class CatText_TextFeature_result {$/;"	c
+Cat_CONSTANTS_H	thrift/gen-cpp/Cat_constants.h	8;"	d
+Cat_TYPES_H	thrift/gen-cpp/Cat_types.h	8;"	d
+Char	include/json/reader.h	/^      typedef char Char;$/;"	t	class:Json::Reader
+ChildValues	include/json/writer.h	/^      typedef std::vector<std::string> ChildValues;$/;"	t	class:Json::StyledStreamWriter
+ChildValues	include/json/writer.h	/^      typedef std::vector<std::string> ChildValues;$/;"	t	class:Json::StyledWriter
+Classfier	classfier.py	/^class Classfier():$/;"	c
+Classfier	include/Classfier.h	/^class Classfier{$/;"	c
+Classfier	src/classfier.cpp	/^Classfier::Classfier()$/;"	f	class:Classfier
+CombineWord	src/FeatureConv.cpp	/^void FeatureConv::CombineWord(vector<string>  & wordList,map<string,int> & wordTf)$/;"	f	class:FeatureConv
+CombinedWordItem	include/common_header.h	/^}CombinedWordItem;$/;"	t	typeref:struct:_CombinedWordItem
+CommentInfo	include/json/value.h	/^      struct CommentInfo$/;"	s	class:Json::Value
+CommentPlacement	include/json/value.h	/^   enum CommentPlacement$/;"	g	namespace:Json
+ComputeWeight	src/FeatureConv.cpp	/^float FeatureConv::ComputeWeight(int & tf,float & idf)$/;"	f	class:FeatureConv
+Config	include/Config.h	/^class Config {  $/;"	c
+Config	src/Config.cpp	/^Config::Config( string filename, string delimiter,string comment ): m_Delimiter(delimiter), m_Comment(comment)  $/;"	f	class:Config
+Config	src/Config.cpp	/^Config::Config(): m_Delimiter( string(1,'=') ), m_Comment( string(1,'#') )  $/;"	f	class:Config
+Convert	src/FeatureConv.cpp	/^void FeatureConv::Convert(vector<string> & wordList,FeatureVec & featureFormat)$/;"	f	class:FeatureConv
+ConvertFormat	src/FeatureConv.cpp	/^void FeatureConv::ConvertFormat(map<int,CombinedWordItem> & byIndex,FeatureVec & featureFormat)$/;"	f	class:FeatureConv
+ConvertNorm	src/FeatureConv.cpp	/^void FeatureConv::ConvertNorm(vector<string> & wordList,FeatureVec & featureFormat)$/;"	f	class:FeatureConv
+ConvertNormSemantic	src/FeatureConv.cpp	/^void FeatureConv::ConvertNormSemantic(vector<string> & wordList,FeatureVec & featureFormat)$/;"	f	class:FeatureConv
+Count	src/SuperString.cpp	/^int SuperString::Count(string & str,string & word)$/;"	f	class:SuperString
+DocInCatIte	include/common_header.h	/^typedef vector<vector<string> >::iterator DocInCatIte;\/\/the iterator$/;"	t
+DocInOneCat	include/common_header.h	/^typedef vector<vector<string> > DocInOneCat;\/\/the document in a category$/;"	t
+DocSet	include/common_header.h	/^typedef map<int,DocInOneCat> DocSet;\/\/the document set,int:catID,DocInOneCat:the document in a category$/;"	t
+DocSetIte	include/common_header.h	/^typedef map<int,DocInOneCat>::iterator DocSetIte;\/\/iterator$/;"	t
+DuplicationPolicy	include/json/value.h	/^         enum DuplicationPolicy $/;"	g	class:Json::Value::CZString
+EndWith	src/SuperString.cpp	/^bool SuperString::EndWith(string & str,string & suffix)$/;"	f	class:SuperString
+ErrorInfo	include/json/reader.h	/^      class ErrorInfo$/;"	c	class:Json::Reader
+Errors	include/json/reader.h	/^      typedef std::deque<ErrorInfo> Errors;$/;"	t	class:Json::Reader
+ExtractPatternOnce	src/SuperString.cpp	/^string SuperString::ExtractPatternOnce(string & str,string & p1,string & p2)$/;"	f	class:SuperString
+FEATURECONV_H	include/FeatureConv.h	8;"	d
+FastWriter	include/json/writer.h	/^   class JSON_API FastWriter : public Writer$/;"	c	namespace:Json
+FeatVecIte	include/common_header.h	/^typedef vector<FeatureItem>::iterator FeatVecIte;\/\/iterator$/;"	t
+FeatureConv	include/FeatureConv.h	/^class FeatureConv{$/;"	c
+FeatureConv	src/FeatureConv.cpp	/^FeatureConv::FeatureConv()$/;"	f	class:FeatureConv
+FeatureItem	include/common_header.h	/^}FeatureItem;$/;"	t	typeref:struct:_FeatureItem
+FeatureSetItem	include/common_header.h	/^}FeatureSetItem;$/;"	t	typeref:struct:_FeatureSetItem
+FeatureVec	include/common_header.h	/^typedef vector<FeatureItem> FeatureVec;\/\/feature vector$/;"	t
+Features	include/json/features.h	/^   class JSON_API Features$/;"	c	namespace:Json
+FileExist	src/Config.cpp	/^bool Config::FileExist(std::string filename)  $/;"	f	class:Config
+File_not_found	include/Config.h	/^         File_not_found( const std::string& filename_ = std::string() )  $/;"	f	struct:Config::File_not_found
+File_not_found	include/Config.h	/^     struct File_not_found {  $/;"	s	class:Config
+FilterFeatureWord	src/FeatureConv.cpp	/^void FeatureConv::FilterFeatureWord(vector<string> & wordList,vector<string> & features)$/;"	f	class:FeatureConv
+FindWordIndex	src/FeatureConv.cpp	/^bool FeatureConv::FindWordIndex(string & word,int & index,float & idf)$/;"	f	class:FeatureConv
+FindWordIndexSemantic	src/FeatureConv.cpp	/^bool FeatureConv::FindWordIndexSemantic(string & word,vector<FeatureSetItem>  & FeatureInfo)$/;"	f	class:FeatureConv
+FreeResource	src/SegmentSina.cpp	/^bool segmentSina::FreeResource()$/;"	f	class:segmentSina
+FtoS	src/SuperString.cpp	/^string SuperString::FtoS(float num) $/;"	f	class:SuperString
+GEN_DIR	thrift/CatServerTest.php	/^$GEN_DIR = '.\/gen-php\/Cat';$/;"	v
+GEN_SRC	thrift/Makefile	/^GEN_SRC = .\/gen-cpp\/CatText.cpp .\/gen-cpp\/Cat_types.cpp .\/gen-cpp\/Cat_constants.cpp$/;"	m
+GetComment	include/Config.h	/^     std::string GetComment() const { return m_Comment; }  $/;"	f	class:Config
+GetCurrentTime	src/Timer.cpp	/^clock_t Timer::GetCurrentTime()$/;"	f	class:Timer
+GetDelimiter	include/Config.h	/^     std::string GetDelimiter() const { return m_Delimiter; }  $/;"	f	class:Config
+Handler	thrift/gen-cpp/CatText.h	/^  typedef CatTextIf Handler;$/;"	t	class:CatTextIfFactory
+HashKey	include/json/value.h	/^      typedef unsigned int HashKey;$/;"	t	class:Json::ValueInternalMap
+ID2FullName	src/CatIdMap.cpp	/^string CatIdMap::ID2FullName(int catID)$/;"	f	class:CatIdMap
+ID2Name	src/CatIdMap.cpp	/^string CatIdMap::ID2Name(int catID)$/;"	f	class:CatIdMap
+IN	include/Classfier.h	21;"	d
+INCLUDE_BLOOM_FILTER_HPP	include/bloom_filter.hpp	21;"	d
+InArgs	include/json/value.h	/^      typedef std::vector<const PathArgument *> InArgs;$/;"	t	class:Json::Path
+Init	src/FeatureConv.cpp	/^bool FeatureConv::Init(string & featureFile,bool bSemantic)$/;"	f	class:FeatureConv
+Init	src/KNN.cpp	/^bool KNN::Init(string & configFile)$/;"	f	class:KNN
+Init	src/classfier.cpp	/^bool Classfier::Init(IN string & configFile)$/;"	f	class:Classfier
+Initial	src/SegmentSina.cpp	/^bool segmentSina::Initial(string & lexiconPath,string & type)$/;"	f	class:segmentSina
+InnerProduct	src/KNN.cpp	/^float KNN::InnerProduct(FeatureVec & document,vector<float> & centorid, int catIndex)$/;"	f	class:KNN
+InnerProduct	src/classfier.cpp	/^float Classfier::InnerProduct(FeatureVec & document,vector<float> & centorid, int catIndex)$/;"	f	class:Classfier
+Int	include/json/forwards.h	/^   typedef int Int;$/;"	t	namespace:Json
+Int	include/json/value.h	/^      typedef Json::Int Int;$/;"	t	class:Json::Value
+InternalFlags	include/json/value.h	/^      enum InternalFlags { $/;"	g	class:Json::ValueInternalLink
+IsAllEN	src/SuperString.cpp	/^bool SuperString::IsAllEN(string & str)$/;"	f	class:SuperString
+IsAlpha	src/SuperString.cpp	/^bool SuperString::IsAlpha(string & str)$/;"	f	class:SuperString
+IsDigital	src/SuperString.cpp	/^bool SuperString::IsDigital(string & str)$/;"	f	class:SuperString
+IsEnPunct	src/SuperString.cpp	/^bool SuperString::IsEnPunct(char ch)$/;"	f	class:SuperString
+IsFeatureWord	src/FeatureConv.cpp	/^bool FeatureConv::IsFeatureWord(string & word)$/;"	f	class:FeatureConv
+IteratorState	include/json/value.h	/^         IteratorState() $/;"	f	struct:Json::ValueInternalArray::IteratorState
+IteratorState	include/json/value.h	/^         IteratorState() $/;"	f	struct:Json::ValueInternalMap::IteratorState
+IteratorState	include/json/value.h	/^      struct IteratorState \/\/ Must be a POD$/;"	s	class:Json::ValueInternalArray
+IteratorState	include/json/value.h	/^      struct IteratorState$/;"	s	class:Json::ValueInternalMap
+ItoS	src/SuperString.cpp	/^string SuperString::ItoS(int num)$/;"	f	class:SuperString
+JSON_API	include/json/config.h	34;"	d
+JSON_API	include/json/config.h	36;"	d
+JSON_API	include/json/config.h	38;"	d
+JSON_API	include/json/config.h	40;"	d
+JSON_AUTOLINK_H_INCLUDED	include/json/autolink.h	2;"	d
+JSON_CONFIG_H_INCLUDED	include/json/config.h	2;"	d
+JSON_FORWARDS_H_INCLUDED	include/json/forwards.h	2;"	d
+JSON_JSON_H_INCLUDED	include/json/json.h	2;"	d
+JSON_USE_CPPTL	include/json/config.h	29;"	d
+JSON_USE_EXCEPTION	include/json/config.h	24;"	d
+JSON_WRITER_H_INCLUDED	include/json/writer.h	2;"	d
+Json	include/json/features.h	/^namespace Json {$/;"	n
+Json	include/json/forwards.h	/^namespace Json {$/;"	n
+Json	include/json/reader.h	/^namespace Json {$/;"	n
+Json	include/json/value.h	/^namespace Json {$/;"	n
+Json	include/json/writer.h	/^namespace Json {$/;"	n
+KNN	include/KNN.h	/^class KNN{$/;"	c
+KNN	src/KNN.cpp	/^KNN::KNN()$/;"	f	class:KNN
+KNN_H	include/KNN.h	7;"	d
+KeyExists	src/Config.cpp	/^bool Config::KeyExists( const string& key ) const  $/;"	f	class:Config
+Key_not_found	include/Config.h	/^             Key_not_found( const std::string& key_ = std::string() )  $/;"	f	struct:Config::Key_not_found
+Key_not_found	include/Config.h	/^         struct Key_not_found {  \/\/ thrown only by T read(key) variant of read()  $/;"	s	class:Config
+Kind	include/json/value.h	/^      enum Kind$/;"	g	class:Json::PathArgument
+LIB_DIR	thrift/Makefile	/^LIB_DIR = \/usr\/local\/lib$/;"	m
+LTrip	src/SuperString.cpp	/^string SuperString::LTrip(string & str)$/;"	f	class:SuperString
+LibSvmSample	include/common_header.h	/^}LibSvmSample;$/;"	t	typeref:struct:_LibSvmSamlpe
+LoadCatInfo	src/CatIdMap.cpp	/^bool CatIdMap::LoadCatInfo(string & inputFile)$/;"	f	class:CatIdMap
+LoadCenteroidVec	src/KNN.cpp	/^bool KNN::LoadCenteroidVec(string & fileName)$/;"	f	class:KNN
+LoadCenteroidVec	src/classfier.cpp	/^bool Classfier::LoadCenteroidVec(string & fileName)$/;"	f	class:Classfier
+LoadFeatureFile	src/FeatureConv.cpp	/^bool FeatureConv::LoadFeatureFile(string & featureFile,map<string,FeatureSetItem> & FeatureSet)$/;"	f	class:FeatureConv
+LoadFeatureFileSemantic	src/FeatureConv.cpp	/^bool FeatureConv::LoadFeatureFileSemantic(string & featureFile,map<string,vector<FeatureSetItem> > & FeatureSet)$/;"	f	class:FeatureConv
+LoadResource	thrift/CatTextServer.cpp	/^  void LoadResource() {$/;"	f	class:CatTextHandler
+LoadResource	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::LoadResource()$/;"	f	class:CatTextClient
+LoadResource	thrift/gen-cpp/CatText.h	/^  void LoadResource() {$/;"	f	class:CatTextMultiface
+LoadResource	thrift/gen-cpp/CatText.h	/^  void LoadResource() {$/;"	f	class:CatTextNull
+LoadResource	thrift/gen-cpp/CatText_server.skeleton.cpp	/^  void LoadResource() {$/;"	f	class:CatTextHandler
+LoadResource	thrift/gen-php/Cat/CatText.php	/^  public function LoadResource()$/;"	f
+LoadResource	thrift/gen-php/Cat/CatText.php	/^  public function LoadResource();$/;"	f
+LoadResource	thrift/gen-php/CatText.php	/^  public function LoadResource()$/;"	f
+LoadResource	thrift/gen-php/CatText.php	/^  public function LoadResource();$/;"	f
+Location	include/json/reader.h	/^      typedef const Char *Location;$/;"	t	class:Json::Reader
+MY_DIR	thrift/Makefile	/^MY_DIR=.\/include$/;"	m
+MY_SRC	thrift/Makefile	/^MY_SRC=..\/src\/CatIdMap.cpp  ..\/src\/SuperString.cpp ..\/src\/Config.cpp ..\/src\/KNN.cpp  ..\/src\/SegmentSina.cpp  ..\/src\/FeatureConv.cpp  ..\/src\/Timer.cpp$/;"	m
+MaxProbCat	src/KNN.cpp	/^int KNN::MaxProbCat(FeatureVec & document,vector<vector<float> > & Centoroid,float & score)$/;"	f	class:KNN
+MaxProbCat	src/classfier.cpp	/^int Classfier::MaxProbCat(FeatureVec & document,vector<vector<float> > & Centoroid,float & score)$/;"	f	class:Classfier
+Members	include/json/value.h	/^      typedef std::vector<std::string> Members;$/;"	t	class:Json::Value
+Name2ID	src/CatIdMap.cpp	/^int  CatIdMap::Name2ID(string & leafCatName)$/;"	f	class:CatIdMap
+Nodes	include/json/reader.h	/^      typedef std::stack<Value *> Nodes;$/;"	t	class:Json::Reader
+NormorizeFeature	src/FeatureConv.cpp	/^void FeatureConv::NormorizeFeature(FeatureVec & featureFormat,FeatureVec & featureFormat2)$/;"	f	class:FeatureConv
+OUT	include/Classfier.h	22;"	d
+ObjectValues	include/json/value.h	/^      typedef CppTL::SmallMap<CZString, Value> ObjectValues;$/;"	t	class:Json::Value
+ObjectValues	include/json/value.h	/^      typedef std::map<CZString, Value> ObjectValues;$/;"	t	class:Json::Value
+PageIndex	include/json/value.h	/^      typedef unsigned int PageIndex;$/;"	t	class:Json::ValueInternalArray
+ParseLine	src/FeatureConv.cpp	/^bool FeatureConv::ParseLine(string & Line,int & index,string & word,float & idf)$/;"	f	class:FeatureConv
+ParseLine	src/KNN.cpp	/^bool KNN::ParseLine(string & Line,vector<float> & centoroid,int & catIndex,int featureSize, float & featureDotProduct)$/;"	f	class:KNN
+ParseLine	src/classfier.cpp	/^bool Classfier::ParseLine(string & Line,vector<float> & centoroid,int & catIndex,int featureSize, float & featureDotProduct)$/;"	f	class:Classfier
+Path	include/json/value.h	/^   class Path$/;"	c	namespace:Json
+PathArgument	include/json/value.h	/^   class PathArgument$/;"	c	namespace:Json
+Predict	src/KNN.cpp	/^float KNN::Predict(const string & content,string & label)$/;"	f	class:KNN
+Predict	src/KNN.cpp	/^int KNN::Predict(const string & content)$/;"	f	class:KNN
+Predict	src/classfier.cpp	/^float Classfier::Predict(const string & content, OUT string & label)$/;"	f	class:Classfier
+Predict	src/classfier.cpp	/^int Classfier::Predict(const string & content)$/;"	f	class:Classfier
+PredictSemantic	src/KNN.cpp	/^int KNN::PredictSemantic(string & content)$/;"	f	class:KNN
+PredictWithName	src/KNN.cpp	/^BestCatResult  KNN::PredictWithName(string & content)$/;"	f	class:KNN
+ProcessFunction	thrift/gen-cpp/CatText.h	/^  typedef  void (CatTextProcessor::*ProcessFunction)(int32_t, ::apache::thrift::protocol::TProtocol*, ::apache::thrift::protocol::TProtocol*, void*);$/;"	t	class:CatTextProcessor
+ProcessMap	thrift/gen-cpp/CatText.h	/^  typedef std::map<std::string, ProcessFunction> ProcessMap;$/;"	t	class:CatTextProcessor
+RTrip	src/SuperString.cpp	/^string SuperString::RTrip(string & str)$/;"	f	class:SuperString
+RankByIndex	src/FeatureConv.cpp	/^void FeatureConv::RankByIndex(map<string,int> & wordTf,map<int,CombinedWordItem> & byIndex)$/;"	f	class:FeatureConv
+RankByIndexSemantic	src/FeatureConv.cpp	/^void FeatureConv::RankByIndexSemantic(map<string,int> & wordTf,map<int,CombinedWordItem> & byIndex)$/;"	f	class:FeatureConv
+Read	include/Config.h	/^ T Config::Read( const std::string& key ) const  $/;"	f	class:Config
+Read	include/Config.h	/^T Config::Read( const std::string& key, const T& value ) const  $/;"	f	class:Config
+ReadFile	src/Config.cpp	/^void Config::ReadFile( string filename, string delimiter,string comment )  $/;"	f	class:Config
+ReadInto	include/Config.h	/^ bool Config::ReadInto( T& var, const std::string& key ) const  $/;"	f	class:Config
+ReadInto	include/Config.h	/^bool Config::ReadInto( T& var, const std::string& key, const T& value ) const  $/;"	f	class:Config
+Reader	include/json/reader.h	/^   class JSON_API Reader$/;"	c	namespace:Json
+Remove	src/Config.cpp	/^void Config::Remove( const string& key )  $/;"	f	class:Config
+RootCatName	src/CatIdMap.cpp	/^string CatIdMap::RootCatName(string & leafCatName)$/;"	f	class:CatIdMap
+SEGMENTSINA_H	include/SegmentSina.h	8;"	d
+SEG_INCLUDE	thrift/Makefile	/^SEG_INCLUDE=..\/..\/Segment\/include$/;"	m
+SEG_LIB	thrift/Makefile	/^SEG_LIB=..\/..\/Segment\/lib$/;"	m
+SEG_SEG_LIB	thrift/Makefile	/^SEG_SEG_LIB=-llexicon -ltouni -lfromuni -lcommon -lustr -lpthread -ldl -lstdc++$/;"	m
+SS	include/TrainingDocParser.h	/^		SuperString SS;$/;"	m	class:TrainingDocParser
+SUPERSTRING_H	include/superString.h	8;"	d
+SampleSet	include/common_header.h	/^typedef  vector<LibSvmSample> SampleSet;$/;"	t
+SampleSetIte	include/common_header.h	/^typedef  vector<LibSvmSample>::iterator SampleSetIte;$/;"	t
+SegmentIdf	src/SegmentSina.cpp	/^bool segmentSina::SegmentIdf(string & sentence,WPList & result)$/;"	f	class:segmentSina
+SegmentOnly	src/SegmentSina.cpp	/^bool segmentSina::SegmentOnly(string & sentence,vector<string> & result)$/;"	f	class:segmentSina
+SegmentPos	src/SegmentSina.cpp	/^bool segmentSina::SegmentPos(string & sentence,WPList & result)$/;"	f	class:segmentSina
+SelfType	include/json/value.h	/^      typedef ValueConstIterator SelfType;$/;"	t	class:Json::ValueConstIterator
+SelfType	include/json/value.h	/^      typedef ValueIterator SelfType;$/;"	t	class:Json::ValueIterator
+SelfType	include/json/value.h	/^      typedef ValueIteratorBase SelfType;$/;"	t	class:Json::ValueIteratorBase
+SetComment	include/Config.h	/^     std::string SetComment( const std::string& in_s )  $/;"	f	class:Config
+SetDelimiter	include/Config.h	/^     std::string SetDelimiter( const std::string& in_s )  $/;"	f	class:Config
+SetFlagsOnlySeg	src/SegmentSina.cpp	/^void segmentSina::SetFlagsOnlySeg()$/;"	f	class:segmentSina
+SetFlagsSegPos	src/SegmentSina.cpp	/^void segmentSina::SetFlagsSegPos()$/;"	f	class:segmentSina
+Split	src/SuperString.cpp	/^int SuperString::Split(string & str,string & seprator,vector<string> & splited)$/;"	f	class:SuperString
+StartWith	src/SuperString.cpp	/^bool SuperString::StartWith(string & str,string & prefix)$/;"	f	class:SuperString
+StaticString	include/json/value.h	/^      explicit StaticString( const char *czstring )$/;"	f	class:Json::StaticString
+StaticString	include/json/value.h	/^   class JSON_API StaticString$/;"	c	namespace:Json
+StyledStreamWriter	include/json/writer.h	/^   class JSON_API StyledStreamWriter$/;"	c	namespace:Json
+StyledWriter	include/json/writer.h	/^   class JSON_API StyledWriter: public Writer$/;"	c	namespace:Json
+SuperString	include/superString.h	/^class SuperString{$/;"	c
+SuperString	src/SuperString.cpp	/^SuperString::SuperString()$/;"	f	class:SuperString
+THRIFT_DIR	thrift/Makefile	/^THRIFT_DIR = \/usr\/local\/include\/thrift$/;"	m
+THRIFT_ROOT	thrift/CatServerTest.php	/^$THRIFT_ROOT= "\/home\/zhangqm\/workspace\/library\/vender\/thrift";$/;"	v
+TIMER_H	include/Timer.h	8;"	d
+TRAININGDOCPARSER_H	include/TrainingDocParser.h	8;"	d
+T_as_string	include/Config.h	/^ std::string Config::T_as_string( const T& t )  $/;"	f	class:Config
+Text2Feature	src/KNN.cpp	/^void KNN::Text2Feature(string & content,FeatureVec & feature)$/;"	f	class:KNN
+Text2Feature	src/classfier.cpp	/^void Classfier::Text2Feature(string & content,FeatureVec & feature)$/;"	f	class:Classfier
+Text2FeatureSemantic	src/KNN.cpp	/^void KNN::Text2FeatureSemantic(string & content,FeatureVec & feature)$/;"	f	class:KNN
+Text2FeatureWords	src/KNN.cpp	/^void KNN::Text2FeatureWords(const string & content, vector<string> & feature){$/;"	f	class:KNN
+TextFeature	thrift/CatTextServer.cpp	/^  void TextFeature(std::string& _return, const std::string& doc) {$/;"	f	class:CatTextHandler
+TextFeature	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::TextFeature(std::string& _return, const std::string& doc)$/;"	f	class:CatTextClient
+TextFeature	thrift/gen-cpp/CatText.h	/^  void TextFeature(std::string& \/* _return *\/, const std::string& \/* doc *\/) {$/;"	f	class:CatTextNull
+TextFeature	thrift/gen-cpp/CatText.h	/^  void TextFeature(std::string& _return, const std::string& doc) {$/;"	f	class:CatTextMultiface
+TextFeature	thrift/gen-cpp/CatText_server.skeleton.cpp	/^  void TextFeature(std::string& _return, const std::string& doc) {$/;"	f	class:CatTextHandler
+TextFeature	thrift/gen-php/Cat/CatText.php	/^  public function TextFeature($doc)$/;"	f
+TextFeature	thrift/gen-php/Cat/CatText.php	/^  public function TextFeature($doc);$/;"	f
+TextFeature	thrift/gen-php/CatText.php	/^  public function TextFeature($doc)$/;"	f
+TextFeature	thrift/gen-php/CatText.php	/^  public function TextFeature($doc);$/;"	f
+TimeDuration	src/Timer.cpp	/^float Timer::TimeDuration(clock_t & begin,clock_t & end)$/;"	f	class:Timer
+Timer	include/Timer.h	/^class Timer{$/;"	c
+Timer	src/Timer.cpp	/^Timer::Timer()$/;"	f	class:Timer
+Token	include/json/reader.h	/^      class Token$/;"	c	class:Json::Reader
+TokenType	include/json/reader.h	/^      enum TokenType$/;"	g	class:Json::Reader
+TrainingDoc	include/common_header.h	/^}TrainingDoc;\/\/training doc not segmented$/;"	t	typeref:struct:_TrainingDoc
+TrainingDocParser	include/TrainingDocParser.h	/^class TrainingDocParser{$/;"	c
+TrainingDocSeged	include/common_header.h	/^}TrainingDocSeged;\/\/segmented training doc$/;"	t	typeref:struct:_TrainingDocSeged
+Trim	src/Config.cpp	/^void Config::Trim( string& inout_s )  $/;"	f	class:Config
+Trip	src/SuperString.cpp	/^string SuperString::Trip(string & str)$/;"	f	class:SuperString
+UInt	include/json/forwards.h	/^   typedef unsigned int UInt;$/;"	t	namespace:Json
+UInt	include/json/value.h	/^      typedef Json::UInt UInt;$/;"	t	class:Json::Value
+Value	include/json/value.h	/^   class JSON_API Value $/;"	c	namespace:Json
+ValueAllocator	include/json/value.h	/^   class ValueAllocator$/;"	c	namespace:Json
+ValueArrayAllocator	include/json/value.h	/^   class JSON_API ValueArrayAllocator$/;"	c	namespace:Json
+ValueConstIterator	include/json/value.h	/^   class ValueConstIterator : public ValueIteratorBase$/;"	c	namespace:Json
+ValueHolder	include/json/value.h	/^      union ValueHolder$/;"	u	class:Json::Value
+ValueInternalArray	include/json/value.h	/^   class JSON_API ValueInternalArray$/;"	c	namespace:Json
+ValueInternalLink	include/json/value.h	/^   class JSON_API ValueInternalLink$/;"	c	namespace:Json
+ValueInternalMap	include/json/value.h	/^   class JSON_API ValueInternalMap$/;"	c	namespace:Json
+ValueIterator	include/json/value.h	/^   class ValueIterator : public ValueIteratorBase$/;"	c	namespace:Json
+ValueIteratorBase	include/json/value.h	/^   class ValueIteratorBase$/;"	c	namespace:Json
+ValueMapAllocator	include/json/value.h	/^   class JSON_API ValueMapAllocator$/;"	c	namespace:Json
+ValueType	include/json/value.h	/^   enum ValueType$/;"	g	namespace:Json
+WPList	include/SegmentSina.h	/^typedef vector<WordPos>  WPList;$/;"	t
+WordIDF	src/SegmentSina.cpp	/^int segmentSina::WordIDF(char * word)$/;"	f	class:segmentSina
+WordPos	include/SegmentSina.h	/^}WordPos;$/;"	t	typeref:struct:_wordPos
+WriteCatInfo	src/CatIdMap.cpp	/^void CatIdMap::WriteCatInfo(string & outputFile)$/;"	f	class:CatIdMap
+Writer	include/json/writer.h	/^   class JSON_API Writer$/;"	c	namespace:Json
+_CatText_CatName_args__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatName_args__isset() : doc(false) {}$/;"	f	struct:_CatText_CatName_args__isset
+_CatText_CatName_args__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_CatName_args__isset {$/;"	s
+_CatText_CatName_args__isset	thrift/gen-cpp/CatText.h	/^} _CatText_CatName_args__isset;$/;"	t	typeref:struct:_CatText_CatName_args__isset
+_CatText_CatName_presult__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatName_presult__isset() : success(false) {}$/;"	f	struct:_CatText_CatName_presult__isset
+_CatText_CatName_presult__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_CatName_presult__isset {$/;"	s
+_CatText_CatName_presult__isset	thrift/gen-cpp/CatText.h	/^} _CatText_CatName_presult__isset;$/;"	t	typeref:struct:_CatText_CatName_presult__isset
+_CatText_CatName_result__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatName_result__isset() : success(false) {}$/;"	f	struct:_CatText_CatName_result__isset
+_CatText_CatName_result__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_CatName_result__isset {$/;"	s
+_CatText_CatName_result__isset	thrift/gen-cpp/CatText.h	/^} _CatText_CatName_result__isset;$/;"	t	typeref:struct:_CatText_CatName_result__isset
+_CatText_CatNumber_args__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatNumber_args__isset() : doc(false) {}$/;"	f	struct:_CatText_CatNumber_args__isset
+_CatText_CatNumber_args__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_CatNumber_args__isset {$/;"	s
+_CatText_CatNumber_args__isset	thrift/gen-cpp/CatText.h	/^} _CatText_CatNumber_args__isset;$/;"	t	typeref:struct:_CatText_CatNumber_args__isset
+_CatText_CatNumber_presult__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatNumber_presult__isset() : success(false) {}$/;"	f	struct:_CatText_CatNumber_presult__isset
+_CatText_CatNumber_presult__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_CatNumber_presult__isset {$/;"	s
+_CatText_CatNumber_presult__isset	thrift/gen-cpp/CatText.h	/^} _CatText_CatNumber_presult__isset;$/;"	t	typeref:struct:_CatText_CatNumber_presult__isset
+_CatText_CatNumber_result__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatNumber_result__isset() : success(false) {}$/;"	f	struct:_CatText_CatNumber_result__isset
+_CatText_CatNumber_result__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_CatNumber_result__isset {$/;"	s
+_CatText_CatNumber_result__isset	thrift/gen-cpp/CatText.h	/^} _CatText_CatNumber_result__isset;$/;"	t	typeref:struct:_CatText_CatNumber_result__isset
+_CatText_TextFeature_args__isset	thrift/gen-cpp/CatText.h	/^  _CatText_TextFeature_args__isset() : doc(false) {}$/;"	f	struct:_CatText_TextFeature_args__isset
+_CatText_TextFeature_args__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_TextFeature_args__isset {$/;"	s
+_CatText_TextFeature_args__isset	thrift/gen-cpp/CatText.h	/^} _CatText_TextFeature_args__isset;$/;"	t	typeref:struct:_CatText_TextFeature_args__isset
+_CatText_TextFeature_presult__isset	thrift/gen-cpp/CatText.h	/^  _CatText_TextFeature_presult__isset() : success(false) {}$/;"	f	struct:_CatText_TextFeature_presult__isset
+_CatText_TextFeature_presult__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_TextFeature_presult__isset {$/;"	s
+_CatText_TextFeature_presult__isset	thrift/gen-cpp/CatText.h	/^} _CatText_TextFeature_presult__isset;$/;"	t	typeref:struct:_CatText_TextFeature_presult__isset
+_CatText_TextFeature_result__isset	thrift/gen-cpp/CatText.h	/^  _CatText_TextFeature_result__isset() : success(false) {}$/;"	f	struct:_CatText_TextFeature_result__isset
+_CatText_TextFeature_result__isset	thrift/gen-cpp/CatText.h	/^typedef struct _CatText_TextFeature_result__isset {$/;"	s
+_CatText_TextFeature_result__isset	thrift/gen-cpp/CatText.h	/^} _CatText_TextFeature_result__isset;$/;"	t	typeref:struct:_CatText_TextFeature_result__isset
+_CombinedWordItem	include/common_header.h	/^typedef struct _CombinedWordItem{$/;"	s
+_FeatureItem	include/common_header.h	/^typedef struct _FeatureItem{$/;"	s
+_FeatureSetItem	include/common_header.h	/^typedef struct _FeatureSetItem{$/;"	s
+_LibSvmSamlpe	include/common_header.h	/^typedef struct _LibSvmSamlpe{$/;"	s
+_TSPEC	thrift/gen-php/Cat/CatText.php	/^  static $_TSPEC;$/;"	v
+_TSPEC	thrift/gen-php/CatText.php	/^  static $_TSPEC;$/;"	v
+_TrainingDoc	include/common_header.h	/^typedef struct _TrainingDoc{$/;"	s
+_TrainingDocSeged	include/common_header.h	/^typedef struct _TrainingDocSeged{$/;"	s
+__construct	thrift/gen-php/Cat/CatText.php	/^  public function __construct($input, $output=null) {$/;"	f
+__construct	thrift/gen-php/Cat/CatText.php	/^  public function __construct($vals=null) {$/;"	f
+__construct	thrift/gen-php/Cat/CatText.php	/^  public function __construct() {$/;"	f
+__construct	thrift/gen-php/CatText.php	/^  public function __construct($input, $output=null) {$/;"	f
+__construct	thrift/gen-php/CatText.php	/^  public function __construct($vals=null) {$/;"	f
+__construct	thrift/gen-php/CatText.php	/^  public function __construct() {$/;"	f
+__init__	classfier.py	/^    def __init__(self):$/;"	m	class:Classfier
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatName_args__isset __isset;$/;"	m	class:CatText_CatName_args
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatName_presult__isset __isset;$/;"	m	class:CatText_CatName_presult
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatName_result__isset __isset;$/;"	m	class:CatText_CatName_result
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatNumber_args__isset __isset;$/;"	m	class:CatText_CatNumber_args
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatNumber_presult__isset __isset;$/;"	m	class:CatText_CatNumber_presult
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_CatNumber_result__isset __isset;$/;"	m	class:CatText_CatNumber_result
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_TextFeature_args__isset __isset;$/;"	m	class:CatText_TextFeature_args
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_TextFeature_presult__isset __isset;$/;"	m	class:CatText_TextFeature_presult
+__isset	thrift/gen-cpp/CatText.h	/^  _CatText_TextFeature_result__isset __isset;$/;"	m	class:CatText_TextFeature_result
+__set_doc	thrift/gen-cpp/CatText.h	/^  void __set_doc(const std::string& val) {$/;"	f	class:CatText_CatName_args
+__set_doc	thrift/gen-cpp/CatText.h	/^  void __set_doc(const std::string& val) {$/;"	f	class:CatText_CatNumber_args
+__set_doc	thrift/gen-cpp/CatText.h	/^  void __set_doc(const std::string& val) {$/;"	f	class:CatText_TextFeature_args
+__set_success	thrift/gen-cpp/CatText.h	/^  void __set_success(const int64_t val) {$/;"	f	class:CatText_CatNumber_result
+__set_success	thrift/gen-cpp/CatText.h	/^  void __set_success(const std::string& val) {$/;"	f	class:CatText_CatName_result
+__set_success	thrift/gen-cpp/CatText.h	/^  void __set_success(const std::string& val) {$/;"	f	class:CatText_TextFeature_result
+_bestCatResult	include/Classfier.h	/^typedef struct _bestCatResult{$/;"	s
+_bestCatResult	include/KNN.h	/^typedef struct _bestCatResult{$/;"	s
+_wordPos	include/SegmentSina.h	/^typedef struct _wordPos$/;"	s
+add	thrift/gen-cpp/CatText.h	/^  void add(boost::shared_ptr<CatTextIf> iface) {$/;"	f	class:CatTextMultiface
+addChildValues_	include/json/writer.h	/^      bool addChildValues_;$/;"	m	class:Json::StyledStreamWriter
+addChildValues_	include/json/writer.h	/^      bool addChildValues_;$/;"	m	class:Json::StyledWriter
+allowComments_	include/json/features.h	/^      bool allowComments_;$/;"	m	class:Json::Features
+args	thrift/gen-php/Cat/CatText.php	/^    $args = new CatText_CatName_args();$/;"	v
+args	thrift/gen-php/Cat/CatText.php	/^    $args = new CatText_CatNumber_args();$/;"	v
+args	thrift/gen-php/Cat/CatText.php	/^    $args = new CatText_LoadResource_args();$/;"	v
+args	thrift/gen-php/Cat/CatText.php	/^    $args = new CatText_TextFeature_args();$/;"	v
+args	thrift/gen-php/CatText.php	/^    $args = new \\CatText_CatName_args();$/;"	v
+args	thrift/gen-php/CatText.php	/^    $args = new \\CatText_CatNumber_args();$/;"	v
+args	thrift/gen-php/CatText.php	/^    $args = new \\CatText_LoadResource_args();$/;"	v
+args	thrift/gen-php/CatText.php	/^    $args = new \\CatText_TextFeature_args();$/;"	v
+args_	include/json/value.h	/^      Args args_;$/;"	m	class:Json::Path
+arrayValue	include/json/value.h	/^      arrayValue,    \/\/\/< array value (ordered list)$/;"	e	enum:Json::ValueType
+array_	include/json/value.h	/^         ValueInternalArray *array_;$/;"	m	struct:Json::ValueInternalArray::IteratorState
+array_	include/json/value.h	/^         ValueInternalArray *array_;$/;"	m	union:Json::Value::ValueHolder
+array_	include/json/value.h	/^         ValueInternalArray::IteratorState array_;$/;"	m	union:Json::ValueIteratorBase::__anon4
+begin_	include/json/reader.h	/^      Location begin_;$/;"	m	class:Json::Reader
+bin_accel	thrift/gen-php/Cat/CatText.php	/^    $bin_accel = ($this->input_ instanceof TProtocol::$TBINARYPROTOCOLACCELERATED) && function_exists('thrift_protocol_read_binary');$/;"	v
+bin_accel	thrift/gen-php/Cat/CatText.php	/^    $bin_accel = ($this->output_ instanceof TProtocol::$TBINARYPROTOCOLACCELERATED) && function_exists('thrift_protocol_write_binary');$/;"	v
+bin_accel	thrift/gen-php/CatText.php	/^    $bin_accel = ($this->input_ instanceof TProtocol::$TBINARYPROTOCOLACCELERATED) && function_exists('thrift_protocol_read_binary');$/;"	v
+bin_accel	thrift/gen-php/CatText.php	/^    $bin_accel = ($this->output_ instanceof TProtocol::$TBINARYPROTOCOLACCELERATED) && function_exists('thrift_protocol_write_binary');$/;"	v
+bit_mask	include/bloom_filter.hpp	/^static const unsigned char bit_mask[bits_per_char] = {$/;"	v
+bit_table_	include/bloom_filter.hpp	/^   unsigned char*          bit_table_;$/;"	m	class:bloom_filter
+bits_per_char	include/bloom_filter.hpp	/^static const std::size_t bits_per_char = 0x08;    \/\/ 8 bits in 1 char(unsigned)$/;"	v
+bloom_filter	include/bloom_filter.hpp	/^   bloom_filter(const bloom_filter& filter)$/;"	f	class:bloom_filter
+bloom_filter	include/bloom_filter.hpp	/^   bloom_filter(const std::size_t& predicted_element_count,$/;"	f	class:bloom_filter
+bloom_filter	include/bloom_filter.hpp	/^class bloom_filter$/;"	c
+bloom_type	include/bloom_filter.hpp	/^   typedef unsigned int bloom_type;$/;"	t	class:bloom_filter
+bool_	include/json/value.h	/^         bool bool_;$/;"	m	union:Json::Value::ValueHolder
+booleanValue	include/json/value.h	/^      booleanValue,  \/\/\/< bool value$/;"	e	enum:Json::ValueType
+bucketIndex_	include/json/value.h	/^         BucketIndex bucketIndex_;$/;"	m	struct:Json::ValueInternalMap::IteratorState
+bucketsSize_	include/json/value.h	/^      BucketIndex bucketsSize_;$/;"	m	class:Json::ValueInternalMap
+buckets_	include/json/value.h	/^      ValueInternalLink *buckets_;$/;"	m	class:Json::ValueInternalMap
+c_str	include/json/value.h	/^      const char *c_str() const$/;"	f	class:Json::StaticString
+catIndex	include/Classfier.h	/^	int catIndex;\/\/cat id$/;"	m	struct:_bestCatResult
+catIndex	include/KNN.h	/^	int catIndex;\/\/cat id$/;"	m	struct:_bestCatResult
+catLable	include/common_header.h	/^	int catLable;    \/\/y value$/;"	m	struct:_LibSvmSamlpe
+catName	include/Classfier.h	/^	string catName;\/\/cat name$/;"	m	struct:_bestCatResult
+catName	include/KNN.h	/^	string catName;\/\/cat name$/;"	m	struct:_bestCatResult
+categorys	classfier.py	/^    categorys=[]$/;"	v	class:Classfier
+cell_type	include/bloom_filter.hpp	/^   typedef unsigned char cell_type;$/;"	t	class:bloom_filter
+childValues_	include/json/writer.h	/^      ChildValues childValues_;$/;"	m	class:Json::StyledStreamWriter
+childValues_	include/json/writer.h	/^      ChildValues childValues_;$/;"	m	class:Json::StyledWriter
+clear	include/bloom_filter.hpp	/^   inline void clear()$/;"	f	class:bloom_filter
+client	thrift/CatServerTest.php	/^$client    = new CatTextClient($protocol);$/;"	v
+collectComments_	include/json/reader.h	/^      bool collectComments_;$/;"	m	class:Json::Reader
+commentAfter	include/json/value.h	/^      commentAfter,             \/\/\/< a comment on the line after a value (only make sense for root value)$/;"	e	enum:Json::CommentPlacement
+commentAfterOnSameLine	include/json/value.h	/^      commentAfterOnSameLine,   \/\/\/< a comment just after a value on the same line$/;"	e	enum:Json::CommentPlacement
+commentBefore	include/json/value.h	/^      commentBefore = 0,        \/\/\/< a comment placed on the line before a value$/;"	e	enum:Json::CommentPlacement
+comment_	include/json/value.h	/^         char *comment_;$/;"	m	struct:Json::Value::CommentInfo
+commentsBefore_	include/json/reader.h	/^      std::string commentsBefore_;$/;"	m	class:Json::Reader
+comments_	include/json/value.h	/^      CommentInfo *comments_;$/;"	m	class:Json::Value
+compress	include/bloom_filter.hpp	/^   inline bool compress(const double& percentage)$/;"	f	class:compressible_bloom_filter
+compressible_bloom_filter	include/bloom_filter.hpp	/^   compressible_bloom_filter(const std::size_t& predicted_element_count,$/;"	f	class:compressible_bloom_filter
+compressible_bloom_filter	include/bloom_filter.hpp	/^class compressible_bloom_filter : public bloom_filter$/;"	c
+compute_indices	include/bloom_filter.hpp	/^   inline virtual void compute_indices(const bloom_type& hash, std::size_t& bit_index, std::size_t& bit) const$/;"	f	class:bloom_filter
+compute_indices	include/bloom_filter.hpp	/^   inline virtual void compute_indices(const bloom_type& hash, std::size_t& bit_index, std::size_t& bit) const$/;"	f	class:compressible_bloom_filter
+const_iterator	include/json/value.h	/^      typedef ValueConstIterator const_iterator;$/;"	t	class:Json::Value
+containPattern	src/SuperString.cpp	/^bool SuperString::containPattern(string & str,string & p1,string & p2)$/;"	f	class:SuperString
+contains	include/bloom_filter.hpp	/^   inline bool contains(const T& t) const$/;"	f	class:bloom_filter
+contains	include/bloom_filter.hpp	/^   inline bool contains(const char* data, const std::size_t& length) const$/;"	f	class:bloom_filter
+contains	include/bloom_filter.hpp	/^   inline bool contains(const std::string& key) const$/;"	f	class:bloom_filter
+contains	include/bloom_filter.hpp	/^   inline virtual bool contains(const unsigned char* key_begin, const std::size_t length) const$/;"	f	class:bloom_filter
+contains_all	include/bloom_filter.hpp	/^   inline InputIterator contains_all(const InputIterator begin, const InputIterator end) const$/;"	f	class:bloom_filter
+contains_none	include/bloom_filter.hpp	/^   inline InputIterator contains_none(const InputIterator begin, const InputIterator end) const$/;"	f	class:bloom_filter
+cstr_	include/json/value.h	/^         const char *cstr_;$/;"	m	class:Json::Value::CZString
+currentItemIndex_	include/json/value.h	/^         unsigned int currentItemIndex_;$/;"	m	struct:Json::ValueInternalArray::IteratorState
+currentPageIndex_	include/json/value.h	/^         Value **currentPageIndex_;$/;"	m	struct:Json::ValueInternalArray::IteratorState
+current_	include/json/reader.h	/^      Location current_;$/;"	m	class:Json::Reader
+current_	include/json/value.h	/^      Value::ObjectValues::iterator current_;$/;"	m	class:Json::ValueIteratorBase
+deletePatternAll	src/SuperString.cpp	/^string SuperString::deletePatternAll(string & str,string & p1,string & p2)$/;"	f	class:SuperString
+deletePatternOnce	src/SuperString.cpp	/^string SuperString::deletePatternOnce(string & str,string & p1,string & p2)$/;"	f	class:SuperString
+desired_false_positive_probability_	include/bloom_filter.hpp	/^   double                  desired_false_positive_probability_;$/;"	m	class:bloom_filter
+difference_type	include/json/value.h	/^      typedef int difference_type;$/;"	t	class:Json::ValueConstIterator
+difference_type	include/json/value.h	/^      typedef int difference_type;$/;"	t	class:Json::ValueIterator
+difference_type	include/json/value.h	/^      typedef int difference_type;$/;"	t	class:Json::ValueIteratorBase
+dispatchCall	thrift/gen-cpp/CatText.cpp	/^bool CatTextProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, const std::string& fname, int32_t seqid, void* callContext) {$/;"	f	class:CatTextProcessor
+doc	thrift/gen-cpp/CatText.h	/^  bool doc;$/;"	m	struct:_CatText_CatName_args__isset
+doc	thrift/gen-cpp/CatText.h	/^  bool doc;$/;"	m	struct:_CatText_CatNumber_args__isset
+doc	thrift/gen-cpp/CatText.h	/^  bool doc;$/;"	m	struct:_CatText_TextFeature_args__isset
+doc	thrift/gen-cpp/CatText.h	/^  const std::string* doc;$/;"	m	class:CatText_CatName_pargs
+doc	thrift/gen-cpp/CatText.h	/^  const std::string* doc;$/;"	m	class:CatText_CatNumber_pargs
+doc	thrift/gen-cpp/CatText.h	/^  const std::string* doc;$/;"	m	class:CatText_TextFeature_pargs
+doc	thrift/gen-cpp/CatText.h	/^  std::string doc;$/;"	m	class:CatText_CatName_args
+doc	thrift/gen-cpp/CatText.h	/^  std::string doc;$/;"	m	class:CatText_CatNumber_args
+doc	thrift/gen-cpp/CatText.h	/^  std::string doc;$/;"	m	class:CatText_TextFeature_args
+doc	thrift/gen-php/Cat/CatText.php	/^        $this->doc = $vals['doc'];$/;"	v
+doc	thrift/gen-php/Cat/CatText.php	/^  public $doc = null;$/;"	v
+doc	thrift/gen-php/CatText.php	/^        $this->doc = $vals['doc'];$/;"	v
+doc	thrift/gen-php/CatText.php	/^  public $doc = null;$/;"	v
+document_	include/json/reader.h	/^      std::string document_;$/;"	m	class:Json::Reader
+document_	include/json/writer.h	/^      std::ostream* document_;$/;"	m	class:Json::StyledStreamWriter
+document_	include/json/writer.h	/^      std::string document_;$/;"	m	class:Json::FastWriter
+document_	include/json/writer.h	/^      std::string document_;$/;"	m	class:Json::StyledWriter
+duplicate	include/json/value.h	/^            duplicate,$/;"	e	enum:Json::Value::CZString::DuplicationPolicy
+duplicateOnCopy	include/json/value.h	/^            duplicateOnCopy$/;"	e	enum:Json::Value::CZString::DuplicationPolicy
+effective_fpp	include/bloom_filter.hpp	/^   inline double effective_fpp() const$/;"	f	class:bloom_filter
+element_count	include/bloom_filter.hpp	/^   inline std::size_t element_count() const$/;"	f	class:bloom_filter
+end_	include/json/reader.h	/^         Location end_;$/;"	m	class:Json::Reader::Token
+end_	include/json/reader.h	/^      Location end_;$/;"	m	class:Json::Reader
+errors_	include/json/reader.h	/^      Errors errors_;$/;"	m	class:Json::Reader
+extra_	include/json/reader.h	/^         Location extra_;$/;"	m	class:Json::Reader::ErrorInfo
+features	classfier.py	/^    features=[]$/;"	v	class:Classfier
+features	include/common_header.h	/^	FeatureVec features;\/\/x value$/;"	m	struct:_LibSvmSamlpe
+features_	include/json/reader.h	/^      Features features_;$/;"	m	class:Json::Reader
+fid	thrift/gen-php/Cat/CatText.php	/^    $fid = 0;$/;"	v
+fid	thrift/gen-php/CatText.php	/^    $fid = 0;$/;"	v
+filename	include/Config.h	/^         std::string filename;  $/;"	m	struct:Config::File_not_found
+find_optimal_parameters	include/bloom_filter.hpp	/^   void find_optimal_parameters()$/;"	f	class:bloom_filter
+flagAvailable	include/json/value.h	/^         flagAvailable = 0,$/;"	e	enum:Json::ValueInternalLink::InternalFlags
+flagUsed	include/json/value.h	/^         flagUsed = 1$/;"	e	enum:Json::ValueInternalLink::InternalFlags
+flags	include/SegmentSina.h	/^     unsigned long long flags;$/;"	m	class:segmentSina
+fname	thrift/gen-php/Cat/CatText.php	/^      $fname = null;$/;"	v
+fname	thrift/gen-php/Cat/CatText.php	/^    $fname = null;$/;"	v
+fname	thrift/gen-php/CatText.php	/^      $fname = null;$/;"	v
+fname	thrift/gen-php/CatText.php	/^    $fname = null;$/;"	v
+ftype	thrift/gen-php/Cat/CatText.php	/^    $ftype = 0;$/;"	v
+ftype	thrift/gen-php/CatText.php	/^    $ftype = 0;$/;"	v
+g_Cat_constants	thrift/gen-cpp/Cat_constants.cpp	/^const CatConstants g_Cat_constants;$/;"	v
+generate_unique_salt	include/bloom_filter.hpp	/^   void generate_unique_salt()$/;"	f	class:bloom_filter
+getHandler	thrift/gen-cpp/CatText.h	/^  virtual CatTextIf* getHandler(const ::apache::thrift::TConnectionInfo&) {$/;"	f	class:CatTextIfSingletonFactory
+getInputProtocol	thrift/gen-cpp/CatText.h	/^  boost::shared_ptr< ::apache::thrift::protocol::TProtocol> getInputProtocol() {$/;"	f	class:CatTextClient
+getName	thrift/gen-php/Cat/CatText.php	/^  public function getName() {$/;"	f
+getName	thrift/gen-php/CatText.php	/^  public function getName() {$/;"	f
+getOutputProtocol	thrift/gen-cpp/CatText.h	/^  boost::shared_ptr< ::apache::thrift::protocol::TProtocol> getOutputProtocol() {$/;"	f	class:CatTextClient
+getProcessor	thrift/gen-cpp/CatText.cpp	/^::boost::shared_ptr< ::apache::thrift::TProcessor > CatTextProcessorFactory::getProcessor(const ::apache::thrift::TConnectionInfo& connInfo) {$/;"	f	class:CatTextProcessorFactory
+handlerFactory_	thrift/gen-cpp/CatText.h	/^  ::boost::shared_ptr< CatTextIfFactory > handlerFactory_;$/;"	m	class:CatTextProcessorFactory
+hash_ap	include/bloom_filter.hpp	/^   bloom_type hash_ap(const unsigned char* begin, std::size_t remaining_length, bloom_type hash) const$/;"	f	class:bloom_filter
+host	thrift/CatServerTest.php	/^$host = '127.0.0.1';$/;"	v
+idf	include/common_header.h	/^	float idf;$/;"	m	struct:_CombinedWordItem
+idf	include/common_header.h	/^	float idf;\/\/feature idf$/;"	m	struct:_FeatureSetItem
+iface_	thrift/gen-cpp/CatText.h	/^  boost::shared_ptr<CatTextIf> iface_;$/;"	m	class:CatTextIfSingletonFactory
+iface_	thrift/gen-cpp/CatText.h	/^  boost::shared_ptr<CatTextIf> iface_;$/;"	m	class:CatTextProcessor
+ifaces_	thrift/gen-cpp/CatText.h	/^  std::vector<boost::shared_ptr<CatTextIf> > ifaces_;$/;"	m	class:CatTextMultiface
+indentSize_	include/json/writer.h	/^      int indentSize_;$/;"	m	class:Json::StyledWriter
+indentString_	include/json/writer.h	/^      std::string indentString_;$/;"	m	class:Json::StyledStreamWriter
+indentString_	include/json/writer.h	/^      std::string indentString_;$/;"	m	class:Json::StyledWriter
+indentation_	include/json/writer.h	/^      std::string indentation_;$/;"	m	class:Json::StyledStreamWriter
+index	include/common_header.h	/^	int index;\/\/feature index number$/;"	m	struct:_FeatureSetItem
+index	include/common_header.h	/^	int index;\/\/feature index$/;"	m	struct:_FeatureItem
+index_	include/json/value.h	/^         int index_;$/;"	m	class:Json::Value::CZString
+index_	include/json/value.h	/^      UInt index_;$/;"	m	class:Json::PathArgument
+input_	thrift/gen-php/Cat/CatText.php	/^    $this->input_ = $input;$/;"	v
+input_	thrift/gen-php/Cat/CatText.php	/^  protected $input_ = null;$/;"	v
+input_	thrift/gen-php/CatText.php	/^    $this->input_ = $input;$/;"	v
+input_	thrift/gen-php/CatText.php	/^  protected $input_ = null;$/;"	v
+insert	include/bloom_filter.hpp	/^   inline void insert(const InputIterator begin, const InputIterator end)$/;"	f	class:bloom_filter
+insert	include/bloom_filter.hpp	/^   inline void insert(const T& t)$/;"	f	class:bloom_filter
+insert	include/bloom_filter.hpp	/^   inline void insert(const char* data, const std::size_t& length)$/;"	f	class:bloom_filter
+insert	include/bloom_filter.hpp	/^   inline void insert(const std::string& key)$/;"	f	class:bloom_filter
+insert	include/bloom_filter.hpp	/^   inline void insert(const unsigned char* key_begin, const std::size_t& length)$/;"	f	class:bloom_filter
+inserted_element_count_	include/bloom_filter.hpp	/^   std::size_t             inserted_element_count_;$/;"	m	class:bloom_filter
+intValue	include/json/value.h	/^      intValue,      \/\/\/< signed integer value$/;"	e	enum:Json::ValueType
+int_	include/json/value.h	/^         Int int_;$/;"	m	union:Json::Value::ValueHolder
+iprot_	thrift/gen-cpp/CatText.h	/^  ::apache::thrift::protocol::TProtocol* iprot_;$/;"	m	class:CatTextClient
+isArray_	include/json/value.h	/^      bool isArray_;$/;"	m	class:Json::ValueIteratorBase
+isItemAvailable	include/json/value.h	/^      inline bool isItemAvailable() const$/;"	f	class:Json::Value
+isMemberNameStatic	include/json/value.h	/^      inline bool isMemberNameStatic() const$/;"	f	class:Json::Value
+isNull_	include/json/value.h	/^      bool isNull_;$/;"	m	class:Json::ValueIteratorBase
+itemCount_	include/json/value.h	/^      BucketIndex itemCount_;$/;"	m	class:Json::ValueInternalMap
+itemIndex_	include/json/value.h	/^         BucketIndex itemIndex_;$/;"	m	struct:Json::ValueInternalMap::IteratorState
+itemPerLink	include/json/value.h	/^      enum { itemPerLink = 6 };  \/\/ sizeof(ValueInternalLink) = 128 on 32 bits architecture.$/;"	e	enum:Json::ValueInternalLink::__anon2
+itemsPerPage	include/json/value.h	/^      enum { itemsPerPage = 8 };    \/\/ should be a power of 2 for fast divide and modulo.$/;"	e	enum:Json::ValueInternalArray::__anon3
+items_	include/json/value.h	/^      Value items_[itemPerLink];$/;"	m	class:Json::ValueInternalLink
+iterator	include/json/value.h	/^      typedef ValueIterator iterator;$/;"	t	class:Json::Value
+iterator_	include/json/value.h	/^      } iterator_;$/;"	m	class:Json::ValueIteratorBase	typeref:union:Json::ValueIteratorBase::__anon4
+key	include/Config.h	/^             std::string key;  $/;"	m	struct:Config::Key_not_found
+key_	include/json/value.h	/^      std::string key_;$/;"	m	class:Json::PathArgument
+keys_	include/json/value.h	/^      char *keys_[itemPerLink];$/;"	m	class:Json::ValueInternalLink
+kindIndex	include/json/value.h	/^         kindIndex,$/;"	e	enum:Json::PathArgument::Kind
+kindKey	include/json/value.h	/^         kindKey$/;"	e	enum:Json::PathArgument::Kind
+kindNone	include/json/value.h	/^         kindNone = 0,$/;"	e	enum:Json::PathArgument::Kind
+kind_	include/json/value.h	/^      Kind kind_;$/;"	m	class:Json::PathArgument
+knn	thrift/CatTextServer.cpp	/^      KNN knn;\/\/category$/;"	m	class:CatTextHandler	file:
+lastValueEnd_	include/json/reader.h	/^      Location lastValueEnd_;$/;"	m	class:Json::Reader
+lastValue_	include/json/reader.h	/^      Value *lastValue_;$/;"	m	class:Json::Reader
+leafCatName	include/common_header.h	/^	string leafCatName;\/\/leaf cat name$/;"	m	struct:_TrainingDoc
+leafCatName	include/common_header.h	/^	string leafCatName;\/\/leaf cat name$/;"	m	struct:_TrainingDocSeged
+lexicon	include/SegmentSina.h	/^      LEXICON *lexicon;$/;"	m	class:segmentSina
+link_	include/json/value.h	/^         ValueInternalLink *link_;$/;"	m	struct:Json::ValueInternalMap::IteratorState
+load	classfier.py	/^    def load():$/;"	m	class:Classfier
+m_BloomFilter	include/FeatureConv.h	/^		bloom_filter  * m_BloomFilter   ;\/\/bloom filter for fast finding$/;"	m	class:FeatureConv
+m_CatNum	include/Classfier.h	/^		int m_CatNum;\/\/the total cat number$/;"	m	class:Classfier
+m_CatNum	include/KNN.h	/^		int m_CatNum;\/\/the total cat number$/;"	m	class:KNN
+m_Comment	include/Config.h	/^    std::string m_Comment;    \/\/!< separator between value and comments  $/;"	m	class:Config
+m_Contents	include/Config.h	/^    std::map<std::string,std::string> m_Contents;  \/\/!< extracted keys and values  $/;"	m	class:Config
+m_Delimiter	include/Config.h	/^    std::string m_Delimiter;  \/\/!< separator between key and value  $/;"	m	class:Config
+m_FeatureSet	include/FeatureConv.h	/^		map<string,FeatureSetItem> m_FeatureSet;\/\/the feature set,for maping from word to index and idf$/;"	m	class:FeatureConv
+m_FeatureSetSemantic	include/FeatureConv.h	/^		map<string,vector<FeatureSetItem> > m_FeatureSetSemantic;\/\/the feature set,for semantic feature,one word can belong to different topic index$/;"	m	class:FeatureConv
+m_FeatureSize	include/Classfier.h	/^		int m_FeatureSize;\/\/the feature size$/;"	m	class:Classfier
+m_FeatureSize	include/KNN.h	/^		int m_FeatureSize;\/\/the feature size$/;"	m	class:KNN
+m_FeatureVec	include/FeatureConv.h	/^		vector<string> m_FeatureVec;\/\/for bloom filer$/;"	m	class:FeatureConv
+m_SS	include/Classfier.h	/^		SuperString m_SS;\/\/string processing$/;"	m	class:Classfier
+m_SS	include/FeatureConv.h	/^		SuperString m_SS;$/;"	m	class:FeatureConv
+m_SS	include/KNN.h	/^		SuperString m_SS;\/\/string processing$/;"	m	class:KNN
+m_Semantic	include/Classfier.h	/^		int m_Semantic;\/\/whether semantic feature	$/;"	m	class:Classfier
+m_Semantic	include/KNN.h	/^		int m_Semantic;\/\/whether semantic feature	$/;"	m	class:KNN
+m_catIdMapFile	include/Classfier.h	/^		string m_catIdMapFile;\/\/cat id map      $/;"	m	class:Classfier
+m_catIdMapFile	include/KNN.h	/^		string m_catIdMapFile;\/\/cat id map      $/;"	m	class:KNN
+m_catNameMap	include/Classfier.h	/^		 CatIdMap m_catNameMap;\/\/map:id<----->name$/;"	m	class:Classfier
+m_catNameMap	include/KNN.h	/^		 CatIdMap m_catNameMap;\/\/map:id<----->name$/;"	m	class:KNN
+m_centoroid	include/Classfier.h	/^		vector<vector<float> > m_centoroid;\/\/the centorid vector list$/;"	m	class:Classfier
+m_centoroid	include/KNN.h	/^		vector<vector<float> > m_centoroid;\/\/the centorid vector list$/;"	m	class:KNN
+m_centoroidFeatureDotProduct	include/Classfier.h	/^		vector<float> m_centoroidFeatureDotProduct;\/\/the centorid vector list$/;"	m	class:Classfier
+m_centoroidFeatureDotProduct	include/KNN.h	/^		vector<float> m_centoroidFeatureDotProduct;\/\/the centorid vector list$/;"	m	class:KNN
+m_config	include/Classfier.h	/^		Config m_config;\/\/config management                                       $/;"	m	class:Classfier
+m_config	include/KNN.h	/^		Config m_config;\/\/config management                                       $/;"	m	class:KNN
+m_currentCatID	include/CatIdMap.h	/^		int m_currentCatID;\/\/the current category ID$/;"	m	class:CatIdMap
+m_dir	include/TrainingDocParser.h	/^		string m_dir;\/\/the dir for training set documents$/;"	m	class:TrainingDocParser
+m_featConvertor	include/Classfier.h	/^		 FeatureConv m_featConvertor;\/\/convert the wordlist to feature and weight$/;"	m	class:Classfier
+m_featConvertor	include/KNN.h	/^		 FeatureConv m_featConvertor;\/\/convert the wordlist to feature and weight$/;"	m	class:KNN
+m_featureFile	include/Classfier.h	/^		string m_featureFile;\/\/feature file name                                  $/;"	m	class:Classfier
+m_featureFile	include/KNN.h	/^		string m_featureFile;\/\/feature file name                                  $/;"	m	class:KNN
+m_id2nameMap	include/CatIdMap.h	/^		map<int,string> m_id2nameMap;\/\/id 2 name$/;"	m	class:CatIdMap
+m_leafRootMap	include/CatIdMap.h	/^		map<string,string> m_leafRootMap;\/\/string1:leaf cat name string2:root cat name$/;"	m	class:CatIdMap
+m_modelName	include/Classfier.h	/^		string m_modelName;\/\/model name,which means the file contains the centoriod		$/;"	m	class:Classfier
+m_modelName	include/KNN.h	/^		string m_modelName;\/\/model name,which means the file contains the centoriod		$/;"	m	class:KNN
+m_name2idMap	include/CatIdMap.h	/^		map<string,int> m_name2idMap;\/\/name 2 id$/;"	m	class:CatIdMap
+m_segPath	include/Classfier.h	/^		string m_segPath;\/\/segmentor path                                         $/;"	m	class:Classfier
+m_segPath	include/KNN.h	/^		string m_segPath;\/\/segmentor path                                         $/;"	m	class:KNN
+m_segmentor	include/Classfier.h	/^		segmentSina m_segmentor;\/\/segmentor$/;"	m	class:Classfier
+m_segmentor	include/KNN.h	/^		segmentSina m_segmentor;\/\/segmentor$/;"	m	class:KNN
+m_time	include/Classfier.h	/^		Timer       m_time;\/\/timer		$/;"	m	class:Classfier
+m_time	include/KNN.h	/^		Timer       m_time;\/\/timer		$/;"	m	class:KNN
+main	thrift/CatTextServer.cpp	/^int main(int argc, char **argv) {$/;"	f
+main	thrift/gen-cpp/CatText_server.skeleton.cpp	/^int main(int argc, char **argv) {$/;"	f
+map_	include/json/value.h	/^         ObjectValues *map_;$/;"	m	union:Json::Value::ValueHolder
+map_	include/json/value.h	/^         ValueInternalMap *map_;$/;"	m	struct:Json::ValueInternalMap::IteratorState
+map_	include/json/value.h	/^         ValueInternalMap *map_;$/;"	m	union:Json::Value::ValueHolder
+map_	include/json/value.h	/^         ValueInternalMap::IteratorState map_;$/;"	m	union:Json::ValueIteratorBase::__anon4
+mapci	include/Config.h	/^    typedef std::map<std::string,std::string>::const_iterator mapci;  $/;"	t	class:Config
+mapi	include/Config.h	/^    typedef std::map<std::string,std::string>::iterator mapi;  $/;"	t	class:Config
+maxInt	include/json/value.h	/^      static const Int maxInt;$/;"	m	class:Json::Value
+maxUInt	include/json/value.h	/^      static const UInt maxUInt;$/;"	m	class:Json::Value
+message_	include/json/reader.h	/^         std::string message_;$/;"	m	class:Json::Reader::ErrorInfo
+minInt	include/json/value.h	/^      static const Int minInt;$/;"	m	class:Json::Value
+model	classfier.py	/^    model=[]$/;"	v	class:Classfier
+mtype	thrift/gen-php/Cat/CatText.php	/^      $mtype = 0;$/;"	v
+mtype	thrift/gen-php/CatText.php	/^      $mtype = 0;$/;"	v
+next_	include/json/value.h	/^      ValueInternalLink *next_;$/;"	m	class:Json::ValueInternalLink
+noDuplication	include/json/value.h	/^            noDuplication = 0,$/;"	e	enum:Json::Value::CZString::DuplicationPolicy
+nodes_	include/json/reader.h	/^      Nodes nodes_;$/;"	m	class:Json::Reader
+null	include/json/value.h	/^      static const Value null;$/;"	m	class:Json::Value
+nullValue	include/json/value.h	/^      nullValue = 0, \/\/\/< 'null' value$/;"	e	enum:Json::ValueType
+numberOfCommentPlacement	include/json/value.h	/^      numberOfCommentPlacement$/;"	e	enum:Json::CommentPlacement
+objectValue	include/json/value.h	/^      objectValue    \/\/\/< object value (collection of name\/value pairs).$/;"	e	enum:Json::ValueType
+operator !	include/bloom_filter.hpp	/^   inline bool operator!() const$/;"	f	class:bloom_filter
+operator !=	include/json/value.h	/^      bool operator !=( const SelfType &other ) const$/;"	f	class:Json::ValueIteratorBase
+operator !=	thrift/gen-cpp/CatText.h	/^  bool operator != (const CatText_CatName_args &rhs) const {$/;"	f	class:CatText_CatName_args
+operator !=	thrift/gen-cpp/CatText.h	/^  bool operator != (const CatText_CatName_result &rhs) const {$/;"	f	class:CatText_CatName_result
+operator !=	thrift/gen-cpp/CatText.h	/^  bool operator != (const CatText_CatNumber_args &rhs) const {$/;"	f	class:CatText_CatNumber_args
+operator !=	thrift/gen-cpp/CatText.h	/^  bool operator != (const CatText_CatNumber_result &rhs) const {$/;"	f	class:CatText_CatNumber_result
+operator !=	thrift/gen-cpp/CatText.h	/^  bool operator != (const CatText_LoadResource_args &rhs) const {$/;"	f	class:CatText_LoadResource_args
+operator !=	thrift/gen-cpp/CatText.h	/^  bool operator != (const CatText_LoadResource_result &rhs) const {$/;"	f	class:CatText_LoadResource_result
+operator !=	thrift/gen-cpp/CatText.h	/^  bool operator != (const CatText_TextFeature_args &rhs) const {$/;"	f	class:CatText_TextFeature_args
+operator !=	thrift/gen-cpp/CatText.h	/^  bool operator != (const CatText_TextFeature_result &rhs) const {$/;"	f	class:CatText_TextFeature_result
+operator &	include/bloom_filter.hpp	/^inline bloom_filter operator & (const bloom_filter& a, const bloom_filter& b)$/;"	f
+operator &=	include/bloom_filter.hpp	/^    bloom_filter& operator &= (const bloom_filter& filter)$/;"	f	class:bloom_filter
+operator *	include/json/value.h	/^      reference operator *() const$/;"	f	class:Json::ValueConstIterator
+operator *	include/json/value.h	/^      reference operator *() const$/;"	f	class:Json::ValueIterator
+operator ++	include/json/value.h	/^      SelfType &operator++()$/;"	f	class:Json::ValueConstIterator
+operator ++	include/json/value.h	/^      SelfType &operator++()$/;"	f	class:Json::ValueIterator
+operator ++	include/json/value.h	/^      SelfType operator++( int )$/;"	f	class:Json::ValueConstIterator
+operator ++	include/json/value.h	/^      SelfType operator++( int )$/;"	f	class:Json::ValueIterator
+operator -	include/json/value.h	/^      difference_type operator -( const SelfType &other ) const$/;"	f	class:Json::ValueIteratorBase
+operator --	include/json/value.h	/^      SelfType &operator--()$/;"	f	class:Json::ValueConstIterator
+operator --	include/json/value.h	/^      SelfType &operator--()$/;"	f	class:Json::ValueIterator
+operator --	include/json/value.h	/^      SelfType operator--( int )$/;"	f	class:Json::ValueConstIterator
+operator --	include/json/value.h	/^      SelfType operator--( int )$/;"	f	class:Json::ValueIterator
+operator <<	src/Config.cpp	/^ std::ostream& operator<<( std::ostream& os, const Config& cf )  $/;"	f
+operator =	include/bloom_filter.hpp	/^   bloom_filter& operator = (const bloom_filter& filter)$/;"	f	class:bloom_filter
+operator ==	include/json/value.h	/^      bool operator ==( const SelfType &other ) const$/;"	f	class:Json::ValueIteratorBase
+operator ==	thrift/gen-cpp/CatText.h	/^  bool operator == (const CatText_CatName_args & rhs) const$/;"	f	class:CatText_CatName_args
+operator ==	thrift/gen-cpp/CatText.h	/^  bool operator == (const CatText_CatName_result & rhs) const$/;"	f	class:CatText_CatName_result
+operator ==	thrift/gen-cpp/CatText.h	/^  bool operator == (const CatText_CatNumber_args & rhs) const$/;"	f	class:CatText_CatNumber_args
+operator ==	thrift/gen-cpp/CatText.h	/^  bool operator == (const CatText_CatNumber_result & rhs) const$/;"	f	class:CatText_CatNumber_result
+operator ==	thrift/gen-cpp/CatText.h	/^  bool operator == (const CatText_LoadResource_args & \/* rhs *\/) const$/;"	f	class:CatText_LoadResource_args
+operator ==	thrift/gen-cpp/CatText.h	/^  bool operator == (const CatText_LoadResource_result & \/* rhs *\/) const$/;"	f	class:CatText_LoadResource_result
+operator ==	thrift/gen-cpp/CatText.h	/^  bool operator == (const CatText_TextFeature_args & rhs) const$/;"	f	class:CatText_TextFeature_args
+operator ==	thrift/gen-cpp/CatText.h	/^  bool operator == (const CatText_TextFeature_result & rhs) const$/;"	f	class:CatText_TextFeature_result
+operator >>	src/Config.cpp	/^std::istream& operator>>( std::istream& is, Config& cf )  $/;"	f
+operator ^	include/bloom_filter.hpp	/^inline bloom_filter operator ^ (const bloom_filter& a, const bloom_filter& b)$/;"	f
+operator ^=	include/bloom_filter.hpp	/^    bloom_filter & operator ^= (const bloom_filter& filter)$/;"	f	class:bloom_filter
+operator const char *	include/json/value.h	/^      operator const char *() const$/;"	f	class:Json::StaticString
+operator |	include/bloom_filter.hpp	/^inline bloom_filter operator | (const bloom_filter& a, const bloom_filter& b)$/;"	f
+operator |=	include/bloom_filter.hpp	/^    bloom_filter & operator |= (const bloom_filter& filter)$/;"	f	class:bloom_filter
+oprot_	thrift/gen-cpp/CatText.h	/^  ::apache::thrift::protocol::TProtocol* oprot_;$/;"	m	class:CatTextClient
+output_	thrift/gen-php/Cat/CatText.php	/^    $this->output_ = $output ? $output : $input;$/;"	v
+output_	thrift/gen-php/Cat/CatText.php	/^  protected $output_ = null;$/;"	v
+output_	thrift/gen-php/CatText.php	/^    $this->output_ = $output ? $output : $input;$/;"	v
+output_	thrift/gen-php/CatText.php	/^  protected $output_ = null;$/;"	v
+pageCount_	include/json/value.h	/^      PageIndex pageCount_;$/;"	m	class:Json::ValueInternalArray
+pages_	include/json/value.h	/^      Value **pages_;$/;"	m	class:Json::ValueInternalArray
+piprot_	thrift/gen-cpp/CatText.h	/^  boost::shared_ptr< ::apache::thrift::protocol::TProtocol> piprot_;$/;"	m	class:CatTextClient
+pointer	include/json/value.h	/^      typedef Value *pointer;$/;"	t	class:Json::ValueIterator
+pointer	include/json/value.h	/^      typedef const Value *pointer;$/;"	t	class:Json::ValueConstIterator
+poprot_	thrift/gen-cpp/CatText.h	/^  boost::shared_ptr< ::apache::thrift::protocol::TProtocol> poprot_;$/;"	m	class:CatTextClient
+port	thrift/CatServerTest.php	/^$port = '9090';$/;"	v
+pos	include/SegmentSina.h	/^   int    pos;$/;"	m	struct:_wordPos
+predict	classfier.py	/^    def predict(self, content):$/;"	m	class:Classfier
+predicted_element_count_	include/bloom_filter.hpp	/^   std::size_t             predicted_element_count_;$/;"	m	class:bloom_filter
+previous_	include/json/value.h	/^      ValueInternalLink *previous_;$/;"	m	class:Json::ValueInternalLink
+processMap_	thrift/gen-cpp/CatText.h	/^  ProcessMap processMap_;$/;"	m	class:CatTextProcessor
+process_CatName	thrift/gen-cpp/CatText.cpp	/^void CatTextProcessor::process_CatName(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)$/;"	f	class:CatTextProcessor
+process_CatNumber	thrift/gen-cpp/CatText.cpp	/^void CatTextProcessor::process_CatNumber(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)$/;"	f	class:CatTextProcessor
+process_LoadResource	thrift/gen-cpp/CatText.cpp	/^void CatTextProcessor::process_LoadResource(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)$/;"	f	class:CatTextProcessor
+process_TextFeature	thrift/gen-cpp/CatText.cpp	/^void CatTextProcessor::process_TextFeature(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)$/;"	f	class:CatTextProcessor
+protocol	thrift/CatServerTest.php	/^$protocol  = new TBinaryProtocol($transport);$/;"	v
+random_seed_	include/bloom_filter.hpp	/^   std::size_t             random_seed_;$/;"	m	class:bloom_filter
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatName_args::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_CatName_args
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatName_presult::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_CatName_presult
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatName_result::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_CatName_result
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatNumber_args::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_CatNumber_args
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatNumber_presult::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_CatNumber_presult
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatNumber_result::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_CatNumber_result
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_LoadResource_args::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_LoadResource_args
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_LoadResource_presult::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_LoadResource_presult
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_LoadResource_result::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_LoadResource_result
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_TextFeature_args::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_TextFeature_args
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_TextFeature_presult::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_TextFeature_presult
+read	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_TextFeature_result::read(::apache::thrift::protocol::TProtocol* iprot) {$/;"	f	class:CatText_TextFeature_result
+read	thrift/gen-php/Cat/CatText.php	/^  public function read($input)$/;"	f
+read	thrift/gen-php/CatText.php	/^  public function read($input)$/;"	f
+realValue	include/json/value.h	/^      realValue,     \/\/\/< double value$/;"	e	enum:Json::ValueType
+real_	include/json/value.h	/^         double real_;$/;"	m	union:Json::Value::ValueHolder
+recv_CatName	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::recv_CatName(std::string& _return)$/;"	f	class:CatTextClient
+recv_CatName	thrift/gen-php/Cat/CatText.php	/^  public function recv_CatName()$/;"	f
+recv_CatName	thrift/gen-php/CatText.php	/^  public function recv_CatName()$/;"	f
+recv_CatNumber	thrift/gen-cpp/CatText.cpp	/^int64_t CatTextClient::recv_CatNumber()$/;"	f	class:CatTextClient
+recv_CatNumber	thrift/gen-php/Cat/CatText.php	/^  public function recv_CatNumber()$/;"	f
+recv_CatNumber	thrift/gen-php/CatText.php	/^  public function recv_CatNumber()$/;"	f
+recv_LoadResource	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::recv_LoadResource()$/;"	f	class:CatTextClient
+recv_LoadResource	thrift/gen-php/Cat/CatText.php	/^  public function recv_LoadResource()$/;"	f
+recv_LoadResource	thrift/gen-php/CatText.php	/^  public function recv_LoadResource()$/;"	f
+recv_TextFeature	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::recv_TextFeature(std::string& _return)$/;"	f	class:CatTextClient
+recv_TextFeature	thrift/gen-php/Cat/CatText.php	/^  public function recv_TextFeature()$/;"	f
+recv_TextFeature	thrift/gen-php/CatText.php	/^  public function recv_TextFeature()$/;"	f
+reference	include/json/value.h	/^      typedef Value &reference;$/;"	t	class:Json::ValueIterator
+reference	include/json/value.h	/^      typedef const Value &reference;$/;"	t	class:Json::ValueConstIterator
+releaseHandler	thrift/gen-cpp/CatText.h	/^  virtual void releaseHandler(CatTextIf* \/* handler *\/) {}$/;"	f	class:CatTextIfSingletonFactory
+res	thrift/CatServerTest.php	/^$res = $client->CatName('java php google 微软 新浪 腾讯 搜狐 盛大');$/;"	v
+res	thrift/CatServerTest.php	/^$res = $client->TextFeature(iconv("utf-8","gbk", 'java php google 微软 新浪 腾讯 搜狐 盛大'));$/;"	v
+result	thrift/gen-php/Cat/CatText.php	/^      $result = new CatText_CatName_result();$/;"	v
+result	thrift/gen-php/Cat/CatText.php	/^      $result = new CatText_CatNumber_result();$/;"	v
+result	thrift/gen-php/Cat/CatText.php	/^      $result = new CatText_LoadResource_result();$/;"	v
+result	thrift/gen-php/Cat/CatText.php	/^      $result = new CatText_TextFeature_result();$/;"	v
+result	thrift/gen-php/CatText.php	/^      $result = new \\CatText_CatName_result();$/;"	v
+result	thrift/gen-php/CatText.php	/^      $result = new \\CatText_CatNumber_result();$/;"	v
+result	thrift/gen-php/CatText.php	/^      $result = new \\CatText_LoadResource_result();$/;"	v
+result	thrift/gen-php/CatText.php	/^      $result = new \\CatText_TextFeature_result();$/;"	v
+rightMargin_	include/json/writer.h	/^      int rightMargin_;$/;"	m	class:Json::StyledStreamWriter
+rightMargin_	include/json/writer.h	/^      int rightMargin_;$/;"	m	class:Json::StyledWriter
+rootCatName	include/common_header.h	/^	string rootCatName;\/\/the root cat name such as:root\/sport\/basketball$/;"	m	struct:_TrainingDoc
+rootCatName	include/common_header.h	/^	string rootCatName;\/\/the root cat name such as:root\/sport\/basketball$/;"	m	struct:_TrainingDocSeged
+rseqid	thrift/gen-php/Cat/CatText.php	/^      $rseqid = 0;$/;"	v
+rseqid	thrift/gen-php/CatText.php	/^      $rseqid = 0;$/;"	v
+salt_	include/bloom_filter.hpp	/^   std::vector<bloom_type> salt_;$/;"	m	class:bloom_filter
+salt_count_	include/bloom_filter.hpp	/^   std::size_t             salt_count_;$/;"	m	class:bloom_filter
+score	include/Classfier.h	/^	float score;\/\/final score;$/;"	m	struct:_bestCatResult
+score	include/KNN.h	/^	float score;\/\/final score;$/;"	m	struct:_bestCatResult
+segment	classfier.py	/^    def segment(self, content):$/;"	m	class:Classfier
+segmentSina	include/SegmentSina.h	/^class segmentSina{$/;"	c
+segmentSina	src/SegmentSina.cpp	/^segmentSina::segmentSina()$/;"	f	class:segmentSina
+segment_url	classfier.py	/^    segment_url=''$/;"	v	class:Classfier
+send_CatName	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::send_CatName(const std::string& doc)$/;"	f	class:CatTextClient
+send_CatName	thrift/gen-php/Cat/CatText.php	/^  public function send_CatName($doc)$/;"	f
+send_CatName	thrift/gen-php/CatText.php	/^  public function send_CatName($doc)$/;"	f
+send_CatNumber	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::send_CatNumber(const std::string& doc)$/;"	f	class:CatTextClient
+send_CatNumber	thrift/gen-php/Cat/CatText.php	/^  public function send_CatNumber($doc)$/;"	f
+send_CatNumber	thrift/gen-php/CatText.php	/^  public function send_CatNumber($doc)$/;"	f
+send_LoadResource	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::send_LoadResource()$/;"	f	class:CatTextClient
+send_LoadResource	thrift/gen-php/Cat/CatText.php	/^  public function send_LoadResource()$/;"	f
+send_LoadResource	thrift/gen-php/CatText.php	/^  public function send_LoadResource()$/;"	f
+send_TextFeature	thrift/gen-cpp/CatText.cpp	/^void CatTextClient::send_TextFeature(const std::string& doc)$/;"	f	class:CatTextClient
+send_TextFeature	thrift/gen-php/Cat/CatText.php	/^  public function send_TextFeature($doc)$/;"	f
+send_TextFeature	thrift/gen-php/CatText.php	/^  public function send_TextFeature($doc)$/;"	f
+seqid_	thrift/gen-php/Cat/CatText.php	/^  protected $seqid_ = 0;$/;"	v
+seqid_	thrift/gen-php/CatText.php	/^  protected $seqid_ = 0;$/;"	v
+setItemUsed	include/json/value.h	/^      inline void setItemUsed( bool isUsed = true )$/;"	f	class:Json::Value
+setMemberNameIsStatic	include/json/value.h	/^      inline void setMemberNameIsStatic( bool isStatic )$/;"	f	class:Json::Value
+size	include/bloom_filter.hpp	/^   inline virtual std::size_t size() const$/;"	f	class:bloom_filter
+size	include/bloom_filter.hpp	/^   inline virtual std::size_t size() const$/;"	f	class:compressible_bloom_filter
+size_	include/json/value.h	/^      ArrayIndex size_;$/;"	m	class:Json::ValueInternalArray
+size_list	include/bloom_filter.hpp	/^   std::vector<std::size_t> size_list;$/;"	m	class:compressible_bloom_filter
+size_t	include/json/value.h	/^      typedef unsigned int size_t;$/;"	t	class:Json::ValueConstIterator
+size_t	include/json/value.h	/^      typedef unsigned int size_t;$/;"	t	class:Json::ValueIterator
+size_t	include/json/value.h	/^      typedef unsigned int size_t;$/;"	t	class:Json::ValueIteratorBase
+socket	thrift/CatServerTest.php	/^$socket    = new TSocket($host, $port);$/;"	v
+start_	include/json/reader.h	/^         Location start_;$/;"	m	class:Json::Reader::Token
+str_	include/json/value.h	/^      const char *str_;$/;"	m	class:Json::StaticString
+strictRoot_	include/json/features.h	/^      bool strictRoot_;$/;"	m	class:Json::Features
+stringValue	include/json/value.h	/^      stringValue,   \/\/\/< UTF-8 string value$/;"	e	enum:Json::ValueType
+string_	include/json/value.h	/^         char *string_;$/;"	m	union:Json::Value::ValueHolder
+string_as_T	include/Config.h	/^ T Config::string_as_T( const std::string& s )  $/;"	f	class:Config
+string_as_T	include/Config.h	/^inline bool Config::string_as_T<bool>( const std::string& s )  $/;"	f	class:Config
+string_as_T	include/Config.h	/^inline std::string Config::string_as_T<std::string>( const std::string& s )  $/;"	f	class:Config
+success	thrift/gen-cpp/CatText.h	/^  bool success;$/;"	m	struct:_CatText_CatName_presult__isset
+success	thrift/gen-cpp/CatText.h	/^  bool success;$/;"	m	struct:_CatText_CatName_result__isset
+success	thrift/gen-cpp/CatText.h	/^  bool success;$/;"	m	struct:_CatText_CatNumber_presult__isset
+success	thrift/gen-cpp/CatText.h	/^  bool success;$/;"	m	struct:_CatText_CatNumber_result__isset
+success	thrift/gen-cpp/CatText.h	/^  bool success;$/;"	m	struct:_CatText_TextFeature_presult__isset
+success	thrift/gen-cpp/CatText.h	/^  bool success;$/;"	m	struct:_CatText_TextFeature_result__isset
+success	thrift/gen-cpp/CatText.h	/^  int64_t success;$/;"	m	class:CatText_CatNumber_result
+success	thrift/gen-cpp/CatText.h	/^  int64_t* success;$/;"	m	class:CatText_CatNumber_presult
+success	thrift/gen-cpp/CatText.h	/^  std::string success;$/;"	m	class:CatText_CatName_result
+success	thrift/gen-cpp/CatText.h	/^  std::string success;$/;"	m	class:CatText_TextFeature_result
+success	thrift/gen-cpp/CatText.h	/^  std::string* success;$/;"	m	class:CatText_CatName_presult
+success	thrift/gen-cpp/CatText.h	/^  std::string* success;$/;"	m	class:CatText_TextFeature_presult
+success	thrift/gen-php/Cat/CatText.php	/^        $this->success = $vals['success'];$/;"	v
+success	thrift/gen-php/Cat/CatText.php	/^  public $success = null;$/;"	v
+success	thrift/gen-php/CatText.php	/^        $this->success = $vals['success'];$/;"	v
+success	thrift/gen-php/CatText.php	/^  public $success = null;$/;"	v
+table	include/bloom_filter.hpp	/^   const cell_type* table() const { return bit_table_; }$/;"	f	class:bloom_filter
+table_size_	include/bloom_filter.hpp	/^   std::size_t             table_size_;$/;"	m	class:bloom_filter
+tailLink_	include/json/value.h	/^      ValueInternalLink *tailLink_;$/;"	m	class:Json::ValueInternalMap
+tf	include/common_header.h	/^	int tf;$/;"	m	struct:_CombinedWordItem
+time0	thrift/CatServerTest.php	/^$time0 = microtime() * 1000;$/;"	v
+time1	thrift/CatServerTest.php	/^$time1 = microtime() * 1000;$/;"	v
+time2	thrift/CatServerTest.php	/^$time2 = microtime() * 1000;$/;"	v
+time3	thrift/CatServerTest.php	/^$time3 = microtime() * 1000;$/;"	v
+time4	thrift/CatServerTest.php	/^$time4 = microtime() * 1000;$/;"	v
+tokenArrayBegin	include/json/reader.h	/^         tokenArrayBegin,$/;"	e	enum:Json::Reader::TokenType
+tokenArrayEnd	include/json/reader.h	/^         tokenArrayEnd,$/;"	e	enum:Json::Reader::TokenType
+tokenArraySeparator	include/json/reader.h	/^         tokenArraySeparator,$/;"	e	enum:Json::Reader::TokenType
+tokenComment	include/json/reader.h	/^         tokenComment,$/;"	e	enum:Json::Reader::TokenType
+tokenEndOfStream	include/json/reader.h	/^         tokenEndOfStream = 0,$/;"	e	enum:Json::Reader::TokenType
+tokenError	include/json/reader.h	/^         tokenError$/;"	e	enum:Json::Reader::TokenType
+tokenFalse	include/json/reader.h	/^         tokenFalse,$/;"	e	enum:Json::Reader::TokenType
+tokenMemberSeparator	include/json/reader.h	/^         tokenMemberSeparator,$/;"	e	enum:Json::Reader::TokenType
+tokenNull	include/json/reader.h	/^         tokenNull,$/;"	e	enum:Json::Reader::TokenType
+tokenNumber	include/json/reader.h	/^         tokenNumber,$/;"	e	enum:Json::Reader::TokenType
+tokenObjectBegin	include/json/reader.h	/^         tokenObjectBegin,$/;"	e	enum:Json::Reader::TokenType
+tokenObjectEnd	include/json/reader.h	/^         tokenObjectEnd,$/;"	e	enum:Json::Reader::TokenType
+tokenString	include/json/reader.h	/^         tokenString,$/;"	e	enum:Json::Reader::TokenType
+tokenTrue	include/json/reader.h	/^         tokenTrue,$/;"	e	enum:Json::Reader::TokenType
+token_	include/json/reader.h	/^         Token token_;$/;"	m	class:Json::Reader::ErrorInfo
+transport	thrift/CatServerTest.php	/^$transport = new TBufferedTransport($socket , 1024, 1024);$/;"	v
+type_	include/json/reader.h	/^         TokenType type_;$/;"	m	class:Json::Reader::Token
+uintValue	include/json/value.h	/^      uintValue,     \/\/\/< unsigned integer value$/;"	e	enum:Json::ValueType
+uint_	include/json/value.h	/^         UInt uint_;$/;"	m	union:Json::Value::ValueHolder
+unknown	include/json/value.h	/^      enum { unknown = (unsigned)-1 };$/;"	e	enum:Json::ValueAllocator::__anon1
+value_	include/json/value.h	/^      } value_;$/;"	m	class:Json::Value	typeref:union:Json::Value::ValueHolder
+weight	include/common_header.h	/^	float weight;\/\/feature weight$/;"	m	struct:_FeatureItem
+word	include/SegmentSina.h	/^   string word;$/;"	m	struct:_wordPos
+word	include/common_header.h	/^	string word;$/;"	m	struct:_CombinedWordItem
+wordList	include/common_header.h	/^	string wordList;\/\/word list of doc$/;"	m	struct:_TrainingDoc
+wordList	include/common_header.h	/^	vector<string> wordList;\/\/word list of doc$/;"	m	struct:_TrainingDocSeged
+wordseg	include/SegmentSina.h	/^      WORD_SEGMENT *wordseg;$/;"	m	class:segmentSina
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatName_args::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_CatName_args
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatName_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_CatName_pargs
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatName_result::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_CatName_result
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatNumber_args::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_CatNumber_args
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatNumber_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_CatNumber_pargs
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_CatNumber_result::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_CatNumber_result
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_LoadResource_args::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_LoadResource_args
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_LoadResource_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_LoadResource_pargs
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_LoadResource_result::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_LoadResource_result
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_TextFeature_args::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_TextFeature_args
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_TextFeature_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_TextFeature_pargs
+write	thrift/gen-cpp/CatText.cpp	/^uint32_t CatText_TextFeature_result::write(::apache::thrift::protocol::TProtocol* oprot) const {$/;"	f	class:CatText_TextFeature_result
+write	thrift/gen-php/Cat/CatText.php	/^  public function write($output) {$/;"	f
+write	thrift/gen-php/CatText.php	/^  public function write($output) {$/;"	f
+x	thrift/gen-php/Cat/CatText.php	/^        $x = new TApplicationException();$/;"	v
+x	thrift/gen-php/CatText.php	/^        $x = new TApplicationException();$/;"	v
+xfer	thrift/gen-php/Cat/CatText.php	/^    $xfer = 0;$/;"	v
+xfer	thrift/gen-php/CatText.php	/^    $xfer = 0;$/;"	v
+yamlCompatiblityEnabled_	include/json/writer.h	/^      bool yamlCompatiblityEnabled_;$/;"	m	class:Json::FastWriter
+~CatIdMap	src/CatIdMap.cpp	/^CatIdMap::~CatIdMap()$/;"	f	class:CatIdMap
+~CatTextIf	thrift/gen-cpp/CatText.h	/^  virtual ~CatTextIf() {}$/;"	f	class:CatTextIf
+~CatTextIfFactory	thrift/gen-cpp/CatText.h	/^  virtual ~CatTextIfFactory() {}$/;"	f	class:CatTextIfFactory
+~CatTextIfSingletonFactory	thrift/gen-cpp/CatText.h	/^  virtual ~CatTextIfSingletonFactory() {}$/;"	f	class:CatTextIfSingletonFactory
+~CatTextMultiface	thrift/gen-cpp/CatText.h	/^  virtual ~CatTextMultiface() {}$/;"	f	class:CatTextMultiface
+~CatTextNull	thrift/gen-cpp/CatText.h	/^  virtual ~CatTextNull() {}$/;"	f	class:CatTextNull
+~CatTextProcessor	thrift/gen-cpp/CatText.h	/^  virtual ~CatTextProcessor() {}$/;"	f	class:CatTextProcessor
+~CatText_CatName_args	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_CatName_args() throw() {}$/;"	f	class:CatText_CatName_args
+~CatText_CatName_pargs	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_CatName_pargs() throw() {}$/;"	f	class:CatText_CatName_pargs
+~CatText_CatName_presult	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_CatName_presult() throw() {}$/;"	f	class:CatText_CatName_presult
+~CatText_CatName_result	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_CatName_result() throw() {}$/;"	f	class:CatText_CatName_result
+~CatText_CatNumber_args	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_CatNumber_args() throw() {}$/;"	f	class:CatText_CatNumber_args
+~CatText_CatNumber_pargs	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_CatNumber_pargs() throw() {}$/;"	f	class:CatText_CatNumber_pargs
+~CatText_CatNumber_presult	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_CatNumber_presult() throw() {}$/;"	f	class:CatText_CatNumber_presult
+~CatText_CatNumber_result	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_CatNumber_result() throw() {}$/;"	f	class:CatText_CatNumber_result
+~CatText_LoadResource_args	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_LoadResource_args() throw() {}$/;"	f	class:CatText_LoadResource_args
+~CatText_LoadResource_pargs	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_LoadResource_pargs() throw() {}$/;"	f	class:CatText_LoadResource_pargs
+~CatText_LoadResource_presult	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_LoadResource_presult() throw() {}$/;"	f	class:CatText_LoadResource_presult
+~CatText_LoadResource_result	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_LoadResource_result() throw() {}$/;"	f	class:CatText_LoadResource_result
+~CatText_TextFeature_args	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_TextFeature_args() throw() {}$/;"	f	class:CatText_TextFeature_args
+~CatText_TextFeature_pargs	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_TextFeature_pargs() throw() {}$/;"	f	class:CatText_TextFeature_pargs
+~CatText_TextFeature_presult	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_TextFeature_presult() throw() {}$/;"	f	class:CatText_TextFeature_presult
+~CatText_TextFeature_result	thrift/gen-cpp/CatText.h	/^  virtual ~CatText_TextFeature_result() throw() {}$/;"	f	class:CatText_TextFeature_result
+~Classfier	src/classfier.cpp	/^Classfier::~Classfier()$/;"	f	class:Classfier
+~FastWriter	include/json/writer.h	/^      virtual ~FastWriter(){}$/;"	f	class:Json::FastWriter
+~FeatureConv	src/FeatureConv.cpp	/^FeatureConv::~FeatureConv()$/;"	f	class:FeatureConv
+~KNN	src/KNN.cpp	/^KNN::~KNN()$/;"	f	class:KNN
+~StyledStreamWriter	include/json/writer.h	/^      ~StyledStreamWriter(){}$/;"	f	class:Json::StyledStreamWriter
+~StyledWriter	include/json/writer.h	/^      virtual ~StyledWriter(){}$/;"	f	class:Json::StyledWriter
+~SuperString	src/SuperString.cpp	/^SuperString::~SuperString()$/;"	f	class:SuperString
+~Timer	src/Timer.cpp	/^Timer::~Timer()$/;"	f	class:Timer
+~bloom_filter	include/bloom_filter.hpp	/^   virtual ~bloom_filter()$/;"	f	class:bloom_filter
+~segmentSina	src/SegmentSina.cpp	/^segmentSina::~segmentSina()$/;"	f	class:segmentSina

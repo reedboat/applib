@@ -2,10 +2,10 @@
 // You should copy it to another filename to avoid overwriting it.
 
 #include "CatText.h"
-#include <protocol/TBinaryProtocol.h>
-#include <server/TSimpleServer.h>
-#include <transport/TServerSocket.h>
-#include <transport/TBufferTransports.h>
+#include <thrift/protocol/TBinaryProtocol.h>
+#include <thrift/server/TSimpleServer.h>
+#include <thrift/transport/TServerSocket.h>
+#include <thrift/transport/TBufferTransports.h>
 
 using namespace ::apache::thrift;
 using namespace ::apache::thrift::protocol;
@@ -13,6 +13,8 @@ using namespace ::apache::thrift::transport;
 using namespace ::apache::thrift::server;
 
 using boost::shared_ptr;
+
+using namespace  ;
 
 class CatTextHandler : virtual public CatTextIf {
  public:
@@ -25,7 +27,7 @@ class CatTextHandler : virtual public CatTextIf {
     printf("LoadResource\n");
   }
 
-  int32_t CatNumber(const std::string& doc) {
+  int64_t CatNumber(const std::string& doc) {
     // Your implementation goes here
     printf("CatNumber\n");
   }

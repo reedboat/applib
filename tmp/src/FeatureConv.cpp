@@ -241,8 +241,6 @@ void FeatureConv::CombineWord(vector<string>  & wordList,map<string,int> & wordT
 			{
 				pair<string,int> value=make_pair((*it),1);
 				wordTf.insert(value);
-
-
 			}
 		}
 	}
