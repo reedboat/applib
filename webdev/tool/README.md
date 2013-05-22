@@ -27,4 +27,7 @@ http://daringfireball.net/projects/markdown/
 
 # coffeescript
 
-# haml
+# slim
+## install
+gem install slim
+
