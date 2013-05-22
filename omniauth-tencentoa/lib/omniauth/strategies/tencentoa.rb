@@ -1,4 +1,5 @@
 require 'omniauth'
+require 'savon'
 
 module OmniAuth
     module Strategies
@@ -7,7 +8,7 @@ module OmniAuth
             option :fields, [:name, :password]
             option :uid_field, :name
 
-            attr_accessor :access_token
+            attr_accessor :auth_info
 
 
             def request_phase
@@ -21,24 +22,33 @@ module OmniAuth
             end
 
             uid do
-                log :info, request.params.to_yaml
                 request.params['name']
             end
 
             info do
-                { :name => request.params['name'],   :password => request.params['password'] }
+                { :name => @auth_info[:name], :nickname => @auth_info[:chinese_name],   :password => request.params['password'] }
             end
 
             credentials do
-                {:token => 'oa-token'}
+                {:token => @auth_info[:token]}
             end
 
-            #def callback_phase
-                #if request.params['password'] != request.params['name'] + '.qq'
-                    #return !fail('username or password incorrect')
-                #end
-                #super
-            #end
+            extra do 
+                {
+                    :raw_info   => @auth_info
+                }
+            end
+
+
+
+            def callback_phase
+                url = 'http://10.6.12.14/services/passportservice.asmx?WSDL'
+                client = Savon.client(wsdl:url)
+                response = client.call(:AuthenticateViaLdap, message:{loginName => username, password => password})
+                self.auth_info = response.body
+                log :info, self.auth_info.to_yaml
+                super
+            end
         end
     end
 end
