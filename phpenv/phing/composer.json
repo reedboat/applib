@@ -1,0 +1,17 @@
+{
+    "name" : "tcms/live",
+    "require": {
+        "phploc/phploc":"*",
+        "phpunit/phpunit":"*",
+        "phpunit/phpunit-mock-objects":"*",
+        "phpunit/phpunit-selenium":"*",
+        "phpunit/phpunit-story":"*",
+        "phpunit/dbunit":"*",
+        "phpunit/php-code-coverage":"*",
+        "squizlabs/php_codesniffer":"*",
+        "pdepend/pdepend":"*",
+        "phpmd/phpmd":"*",
+        "sebastian/phpcpd":"*",
+        "theseer/phpdox":"*"
+    }
+}
