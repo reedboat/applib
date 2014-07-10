@@ -2,7 +2,8 @@
 //methods:
 //firephp
 //errors
-//展现形式：普通文本，按行， 按表格
+//展现形式：普通文本，按行，按表格. 含颜色等样式
+//输出渠道: Web.（页面, console） Termina(stdout, stderr)
 //
 class PhpDebug {
 
