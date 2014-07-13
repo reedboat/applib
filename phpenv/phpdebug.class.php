@@ -1,11 +1,27 @@
 <?php
+//问题：
+// 1. web上的var_dump不友好，经常需要手工加<pre></pre>
+// 2. 如何在日志中更好的展现数组, 又尽量不要破坏日志结构，否则不易分析 
+// 3. 如何让调试信息和正式内容分开。
+//    1) 调试信息会破坏正常的页面布局
+//    2) 调试信息可能导致json等不能被解析
+//    3) 调试信息分散以致无法获得好的反馈
+//    4) 避免一次只能调试一小块。 
+// 4. 确定问题的时候，经常会需要连续打点, 以确认问题到底发生在哪里。 
+// 5. 调试数据要能够方便的去除。 关闭调试信息和从代码中去除
+// 6. 如何能够快速profile一堆函数 以确定瓶颈
+// 7. 能够快速的收集当前的trace
+// 8. 能够展示当前的内存占用
+//
 //methods:
-//firephp
+//firephp 调试信息输出到webconsole
+//Krumo: http://krumo.sourceforge.net/ 更好的var_dump和print_r
 //errors
 //展现形式：普通文本，按行，按表格. 含颜色等样式
 //输出渠道: Web.（页面, console） Termina(stdout, stderr)
 //
-class PhpDebug {
+//
+class WF_Debug {
 
     //output: page, cli, webconsole
     public $times = array();
@@ -39,6 +55,10 @@ class PhpDebug {
     public function after(){
     }
 
+    public function is_cli(){
+        return php_sapi_name() == 'cli';
+    }
+
     public function pre($param)
     {
         if (!headers_sent()){
@@ -70,6 +90,7 @@ class PhpDebug {
     {
         $ex = new Exception();
         echo self::pred($ex->getTraceAsString());
+        exit;
     }
     
     protected function memory($label='default')
@@ -108,7 +129,19 @@ class PhpDebug {
 
     public function dump($param)
     {
-        return null;
+        if ($this->is_cli()){
+            var_dump($param);
+        }
+        else {
+            echo "<pre style=\"border: 1px solid #000; overflow: auto; margin: 0.5em;\" >";
+            var_dump($param);
+            echo "</pre><br />";
+        }
     }
-    
+
+    public function dump_on($message, $cond=true){
+        if ($cond) {
+            $this->dump($message);
+        }
+    }
 }
