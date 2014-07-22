@@ -52,7 +52,15 @@ class WF_Debug {
 
     public function before(){
     }
+     
     public function after(){
+    }
+
+    public function tag($label = 'default'){
+        static $count;
+        $count ++;
+        $message = $count . " [" . $label . "]";
+        $this->pre($message);
     }
 
     public function is_cli(){
@@ -61,15 +69,18 @@ class WF_Debug {
 
     public function pre($param)
     {
-        if (!headers_sent()){
+        $is_cli = $this->is_cli();
+
+        if (!$is_cli && !headers_sent()){
             header("Content-type: text/html; charset=utf-8");
         }
 
-        $is_cli = php_sapi_name() == 'cli';
         echo ($is_cli ? "" : "<pre>");
         foreach (func_get_args() as $arg){
             print_r($arg);
-            if (!is_array($arr) && !is_object($arr)) echo(!$is_cli ? '<br />' : "\n");
+            if (!is_array($arg) && !is_object($arg)){
+                echo(!$is_cli ? '<br />' : "\n");
+            } 
         }
         echo ($is_cli ? "" : "</pre>");
     }
@@ -113,7 +124,9 @@ class WF_Debug {
 
     public function trace($message)
     {
-        return null;
+        $this->pre($message);
+        $ex = new Exception();
+        self::pre($ex->getTraceAsString());
     }
 
     //firephp
@@ -145,3 +158,12 @@ class WF_Debug {
         }
     }
 }
+?>
+
+<?php
+$debug = new WF_Debug();
+$debug->tag();
+$debug->tag();
+$debug->tag();
+$debug->tag();
+$debug->dump_on(array('aaa'), 1);
