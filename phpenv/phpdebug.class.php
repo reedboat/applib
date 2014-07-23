@@ -60,6 +60,25 @@ class WF_Debug {
         static $count;
         $count ++;
         $message = $count . " [" . $label . "]";
+        $traces = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 2);
+        $function = '__main__';
+        $class    = '';
+        if (count($traces) >= 2){
+            $current  = $traces[1];
+            $function = $current['function'];
+            $class    = isset($current['class']) ? $current['class'] : '';
+        }
+         
+        $current = $traces[0];
+
+        $file = basename($current['file']);
+        $line = $current['line'];
+        if ($class){
+            $function = "$class::$function";
+        }
+        else {
+        }
+        $message = $count . " $function() in file $file, line $line";
         $this->pre($message);
     }
 
@@ -162,8 +181,30 @@ class WF_Debug {
 
 <?php
 $debug = new WF_Debug();
+function aa(){
+    $s = time();
+    bb();
+    $s = time();
+    $debug = new WF_Debug();
+    $debug->tag();
+}
+function bb(){
+    $debug = new WF_Debug();
+    $debug->tag();
+}
+class C{
+    function cc(){
+        aa();
+    }
+    function ee(){
+        $debug = new WF_Debug();
+        $debug->tag();
+    }
+}
+
 $debug->tag();
-$debug->tag();
-$debug->tag();
-$debug->tag();
+aa();
+$c = new C();
+$c->cc();
+$c->ee();
 $debug->dump_on(array('aaa'), 1);
