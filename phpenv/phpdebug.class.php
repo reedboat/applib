@@ -23,8 +23,14 @@
 //
 class WF_Debug {
 
+    private static $_instance = null;
+
     //output: page, cli, webconsole
-    public $times = array();
+    public $times      = array();
+    private $tag_count = 0;
+    private $profile_last_time = array();
+    private $profiles_stack    = array();
+
     private $colors = array(
         array('web' => '#C91C02', 'cli' => "\033[31m"),
         array('web' => '#A0D36E', 'cli' => "\033[32m"),
@@ -36,32 +42,54 @@ class WF_Debug {
         array('web' => '#aaaaaa', 'cli' => "\033[30m")
     );
 
-    public static function enable()
+    public static function instance()
+    {
+        if (self::$_instance === null){
+            $className = __CLASS__;
+            self::$_instance = new $className();
+        }
+        return self::$_instance;
+    }
+
+    public function enable()
     {
         error_reporting(E_ALL & ~E_NOTICE);
         ini_set('display_errors', true);
     }
 
-    public function profile($label='default')
-    {
-        $time = round(microtime(true) * 1000);
-        $cost = $time - $this->last;
-        $this->echo("$label " . ($cost > 0 ? '+ ' . $cost : $cost) . ' ms');
-        $this->last = $time;
+    public function beginProfile($label){
+        $this->profiles_stack[] = $label;
+        $this->profile();
     }
 
-    public function before(){
+    public function endProfile(){
+        array_pop($this->profiles_stack);
     }
-     
-    public function after(){
+
+    public function profile($tag='')
+    {
+        if (count($this->profiles_stack) == 0){
+            $this->beginProfile('default');
+            return;
+        }
+
+        $label = array_slice($this->profiles_stack, -1, 1);
+        $label = $label[0];
+        $time = microtime(true) * 1000;
+        if (!isset($this->profile_last_time[$label])){
+            $cost = 0;
+        }
+        else {
+            $cost = $time - $this->profile_last_time[$label];
+        }
+        $cost = round($cost, 3);
+        $this->profile_last_time[$label] = $time;
+        $this->echoln("[$label] $tag " . ($cost > 0 ? '+' . $cost : $cost) . ' ms');
     }
 
     public function tag($label = 'default'){
-        static $count;
-        $count ++;
-        $message = $count . " [" . $label . "]";
         $traces = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 2);
-        $function = '__main__';
+        $function = '{main}';
         $class    = '';
         if (count($traces) >= 2){
             $current  = $traces[1];
@@ -74,11 +102,11 @@ class WF_Debug {
         $file = basename($current['file']);
         $line = $current['line'];
         if ($class){
-            $function = "$class::$function";
+            $function = "$class" . $current['type'] . "$function";
         }
-        else {
-        }
-        $message = $count . " $function() in file $file, line $line";
+
+        $message = "#" . $this->tag_count . " $function() in file $file, line $line";
+        $this->tag_count += 1;
         $this->pre($message);
     }
 
@@ -86,7 +114,8 @@ class WF_Debug {
         return php_sapi_name() == 'cli';
     }
 
-    public function pre($param)
+    //web页面输出原格式。
+    public function pre()
     {
         $is_cli = $this->is_cli();
 
@@ -113,29 +142,30 @@ class WF_Debug {
     public function pre_trace()
     {
         $ex = new Exception();
-        echo self::pre($ex->getTraceAsString());
+        self::pre($ex->getTraceAsString());
     }
 
     public function pred_trace()
     {
         $ex = new Exception();
-        echo self::pred($ex->getTraceAsString());
+        self::pred($ex->getTraceAsString());
         exit;
     }
     
-    protected function memory($label='default')
+    public function memory($label='default')
     {
         $usage = number_format(memory_get_usage() / 1024 / 1024, 2).' MB';
         $peak = number_format(memory_get_peak_usage() / 1024 / 1024, 2).' MB';
         $name = 'Memory Usage';
-        if ($nameRaw) {
+        if ($label) {
             $name = $name.': '.$label;
         }
         $msg = array(
-            "Current: \t".$usage,
-            "Peak: \t\t".$peak
+            "\tCurrent: \t".$usage,
+            "\tPeak: \t\t".$peak
         );
         $msg = implode("\n", $msg);
+        $this->pre($name);
         $this->pre($msg);
     }
     
@@ -176,20 +206,27 @@ class WF_Debug {
             $this->dump($message);
         }
     }
+
+    //输出消息+换行
+    public function echoln($message = ''){
+        $is_cli = $this->is_cli();
+        echo $message;
+        echo $is_cli ? PHP_EOL : "<br />" ;
+    }
 }
 ?>
 
 <?php
-$debug = new WF_Debug();
+$debug = WF_Debug::instance();
 function aa(){
     $s = time();
     bb();
     $s = time();
-    $debug = new WF_Debug();
+    $debug = WF_Debug::instance();
     $debug->tag();
 }
 function bb(){
-    $debug = new WF_Debug();
+    $debug = WF_Debug::instance();
     $debug->tag();
 }
 class C{
@@ -197,7 +234,7 @@ class C{
         aa();
     }
     function ee(){
-        $debug = new WF_Debug();
+        $debug = WF_Debug::instance();
         $debug->tag();
     }
 }
@@ -207,4 +244,19 @@ aa();
 $c = new C();
 $c->cc();
 $c->ee();
+$debug->echoln('xxx');
 $debug->dump_on(array('aaa'), 1);
+$debug->memory();
+$debug->trace("aaaa");
+$debug->profile();
+sleep(1);
+$debug->profile();
+sleep(2);
+$debug->profile();
+$debug->beginProfile('kkkk');
+$debug->profile(1);
+$debug->profile(2);
+sleep(1);
+$debug->profile(3);
+$debug->endProfile();
+$debug->profile(4);
