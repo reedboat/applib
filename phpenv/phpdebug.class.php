@@ -20,7 +20,15 @@
 //展现形式：普通文本，按行，按表格. 含颜色等样式
 //输出渠道: Web.（页面, console） Termina(stdout, stderr)
 //
-//
+//实现：
+//输出底层方法: pre, line, fire, dump, printf
+//内容相关：
+//  tag: tag()
+//  trace: trace()
+//  memory: memory();
+//  profile: beginProfile(), endProfile(), profile(), xhprof()
+//  condition: dump_on, pre_on 
+//  exit: pred, pred_trace
 class WF_Debug {
 
     private static $_instance = null;
@@ -42,11 +50,42 @@ class WF_Debug {
         array('web' => '#aaaaaa', 'cli' => "\033[30m")
     );
 
-    public static function instance()
+    const WHERE_STDERR       = 1;
+    const WHERE_STDOUT       = 2;
+    const WHERE_FILE         = 3;
+    const WHERE_WEB_PAGE     = 4;
+    const WHERE_WEB_PCONSOLE = 5;
+
+    public function __construct($options=array())
+    {
+        $this->terminal = php_sapi_name();
+        $this->output_where = $this->terminal == 'cli' 
+            ? "stderr"
+            : "page";
+        /*
+         * 指定输出到哪里:
+         * 1. web_page: 还可指定pre的样式
+         * 2. web_console: 通过firephp输出
+         * 3. terminal_stdout: 终端标准输出。可指定是否带ansi color.
+         * 4. terminal_stderr: 终端标准错误。可指定是否带ansi color.
+         * 5. file: 可指定文件,默认为/tmp/debug.log
+         *
+         * 默认为根据sapi_name自动挑选合适的输出位置
+         */
+        /*
+         * 输出类型：
+         *  字节: echo
+         *  行: line
+         *  块: var_dump, print_r
+         */
+    }
+    
+
+    public static function instance($options=array())
     {
         if (self::$_instance === null){
             $className = __CLASS__;
-            self::$_instance = new $className();
+            self::$_instance = new $className($options);
         }
         return self::$_instance;
     }
@@ -84,7 +123,7 @@ class WF_Debug {
         }
         $cost = round($cost, 3);
         $this->profile_last_time[$label] = $time;
-        $this->echoln("[$label] $tag " . ($cost > 0 ? '+' . $cost : $cost) . ' ms');
+        $this->line("[$label] $tag " . ($cost > 0 ? '+' . $cost : $cost) . ' ms');
     }
 
     public function tag($label = 'default'){
@@ -111,7 +150,7 @@ class WF_Debug {
     }
 
     public function is_cli(){
-        return php_sapi_name() == 'cli';
+        return $this->terminal == 'cli';
     }
 
     //web页面输出原格式。
@@ -189,6 +228,15 @@ class WF_Debug {
         return null;
     }
 
+    //只在url中带有debug参数的时候，输出
+    public function pre_on($message, $echo=1, $debug_param='debug')
+    {
+        if (isset($_REQUEST[$debug_param])){
+            $this->pre($message);
+        }
+    }
+    
+
     public function dump($param)
     {
         if ($this->is_cli()){
@@ -208,7 +256,7 @@ class WF_Debug {
     }
 
     //输出消息+换行
-    public function echoln($message = ''){
+    public function line($message = ''){
         $is_cli = $this->is_cli();
         echo $message;
         echo $is_cli ? PHP_EOL : "<br />" ;
@@ -217,6 +265,7 @@ class WF_Debug {
 ?>
 
 <?php
+/*
 $debug = WF_Debug::instance();
 function aa(){
     $s = time();
@@ -244,7 +293,7 @@ aa();
 $c = new C();
 $c->cc();
 $c->ee();
-$debug->echoln('xxx');
+$debug->line('xxx');
 $debug->dump_on(array('aaa'), 1);
 $debug->memory();
 $debug->trace("aaaa");
@@ -260,3 +309,4 @@ sleep(1);
 $debug->profile(3);
 $debug->endProfile();
 $debug->profile(4);
+ */
