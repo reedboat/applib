@@ -1,12 +1,15 @@
 {
     "name": "reedboat/applib",
+    "description": "A library to validate a json schema.",    
     "type": "library",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "reedboat",
             "email": "zhqm03@gmail.com"
         }
     ],
+    
     "minimum-stability": "stable",
     "require": {}
 }
