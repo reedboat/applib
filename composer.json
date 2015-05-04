@@ -1,0 +1,12 @@
+{
+    "name": "reedboat/applib",
+    "type": "library",
+    "authors": [
+        {
+            "name": "reedboat",
+            "email": "zhqm03@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
